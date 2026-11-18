@@ -1,0 +1,1149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f5f2f8">
+<title>The Right to Ask</title>
+<meta name="description" content="Santhoshraj Srinivasan: social worker, researcher, and teacher. Weekly stories from a village in Tamil Nadu to the social work classroom.">
+<meta property="og:title" content="The Right to Ask · Santhoshraj Srinivasan">
+<meta property="og:description" content="Social worker, researcher, and teacher. Stories, reflections, and a podcast from a village in Tamil Nadu to the social work classroom.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..100,0..1;1,9..144,300..700,0..100,0..1&family=Noto+Serif+Tamil:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f2f8; --bg-2:#fdfbff; --ink:#221f45; --ink-2:#4b4870; --muted:#85829f;
+  --accent:#3c4fae; --accent-2:#3f8a74; --warm:#6e4fb8; --orange:#f5782a; --gold:#f2b84b; --rose:#e2789a;
+  --glass:rgba(255,255,255,.55); --glass-brd:rgba(255,255,255,.8); --glass-shadow:0 10px 36px rgba(58,46,120,.10);
+  --hair:rgba(58,46,120,.10);
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Display","Inter",system-ui,sans-serif;
+  --serif:"Fraunces","Instrument Serif",Georgia,serif; --tamil:"Noto Serif Tamil",serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#16173a; --bg-2:#1e2048; --ink:#f3f0fb; --ink-2:#d2cdea; --muted:#9f9abf;
+  --accent:#a7b6ff; --accent-2:#8fd6bd; --warm:#c9b4ff; --orange:#ff9a52; --gold:#ffd27a; --rose:#ff9fbd;
+  --glass:rgba(44,44,96,.48); --glass-brd:rgba(230,225,255,.14); --glass-shadow:0 10px 36px rgba(6,6,30,.5); --hair:rgba(230,225,255,.1);
+}}
+:root[data-theme="dark"]{
+  --bg:#16173a; --bg-2:#1e2048; --ink:#f3f0fb; --ink-2:#d2cdea; --muted:#9f9abf;
+  --accent:#a7b6ff; --accent-2:#8fd6bd; --warm:#c9b4ff; --orange:#ff9a52; --gold:#ffd27a; --rose:#ff9fbd;
+  --glass:rgba(44,44,96,.48); --glass-brd:rgba(230,225,255,.14); --glass-shadow:0 10px 36px rgba(6,6,30,.5); --hair:rgba(230,225,255,.1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.5;letter-spacing:-.011em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+.kicker{font-size:14px;font-weight:600;color:var(--warm);letter-spacing:0}
+.h-xl{font-size:clamp(42px,6vw,76px);font-weight:700;letter-spacing:-.045em;line-height:1.02}
+.h-l{font-size:clamp(36px,5.2vw,64px);font-weight:700;letter-spacing:-.04em;line-height:1.05}
+.serif{font-family:var(--serif);font-weight:400;font-style:italic;letter-spacing:-.01em}
+.sub{font-size:clamp(19px,2vw,23px);color:var(--muted);font-weight:500;letter-spacing:-.02em;line-height:1.4}
+.grad{background:linear-gradient(100deg,var(--accent),var(--accent-2) 55%,var(--warm));-webkit-background-clip:text;background-clip:text;color:transparent}
+section{padding:120px 0;position:relative}
+
+/* liquid glass */
+.glass{background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);box-shadow:var(--glass-shadow),inset 0 1px 0 rgba(255,255,255,.55),inset 0 -1px 0 rgba(255,255,255,.08)}
+
+/* ambient light */
+.ambient{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.ambient i{position:absolute;border-radius:50%;filter:blur(90px);opacity:.45;animation:drift 22s ease-in-out infinite alternate}
+.ambient i:nth-child(1){width:520px;height:520px;background:#a9c8f5;top:-160px;left:-120px}
+.ambient i:nth-child(2){width:460px;height:460px;background:#ffd29a;top:30%;right:-160px;animation-delay:-8s}
+.ambient i:nth-child(3){width:420px;height:420px;background:#cdb8f2;bottom:-180px;left:30%;animation-delay:-14s}
+@keyframes drift{to{transform:translate(60px,40px) scale(1.12)}}
+
+/* top nav pill */
+.nav{position:fixed;top:14px;left:50%;transform:translateX(-50%);z-index:80;border-radius:999px;display:flex;align-items:center;gap:6px;padding:6px 6px 6px 18px;width:min(760px,calc(100% - 28px))}
+.nav .brand{font-weight:600;font-size:15px;letter-spacing:-.02em;margin-right:auto;display:flex;align-items:center;gap:9px;white-space:nowrap}
+.nav .brand b{width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff;font-family:var(--serif);font-style:italic;font-weight:400;font-size:15px}
+.nav a.l{font-size:13.5px;color:var(--ink-2);padding:8px 12px;border-radius:999px;transition:background .3s}
+.nav a.l:hover{background:var(--hair)}
+.pill-btn{background:var(--ink);color:var(--bg);font-size:13.5px;font-weight:600;padding:9px 16px;border-radius:999px;border:0;cursor:pointer;transition:transform .3s var(--ease)}
+.pill-btn:hover{transform:scale(1.04)}
+
+/* bottom tab bar (phone) */
+.tabbar{display:none}
+
+/* hero */
+.hero{min-height:100svh;display:flex;align-items:center;padding:130px 0 60px}
+.hero .grid{display:grid;grid-template-columns:1.35fr .75fr;gap:56px;align-items:center}
+.hero .h-xl .serif{font-weight:400;letter-spacing:-.02em}
+.hero .sub{margin:26px 0 34px;max-width:540px}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:16px;transition:transform .35s var(--ease),box-shadow .35s}
+.btn.primary{background:var(--accent);color:#fff;box-shadow:0 10px 30px -10px var(--accent)}
+.btn.glass{color:var(--ink)}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.portrait{aspect-ratio:4/5;border-radius:40px;position:relative;overflow:hidden;will-change:transform;
+  background:radial-gradient(90% 70% at 30% 20%,#ffd29a 0%,transparent 55%),radial-gradient(80% 60% at 80% 90%,#e2789a 0%,transparent 60%),linear-gradient(160deg,#3c4fae,#3a2a78)}
+.portrait .label{position:absolute;left:16px;right:16px;bottom:16px;border-radius:24px;padding:16px 18px;color:#fff;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.portrait .label b{display:block;font-size:20px;letter-spacing:-.02em}
+.portrait .label span{font-size:13px;opacity:.85}
+.portrait .tag{position:absolute;top:16px;left:16px;font-size:12px;color:#fff;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(10px)}
+
+/* stats rail */
+.rail{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.tile{border-radius:28px;padding:26px 22px}
+.tile b{display:block;font-size:46px;font-weight:700;letter-spacing:-.05em;line-height:1}
+.tile span{display:block;margin-top:10px;font-size:14px;color:var(--ink-2);line-height:1.4}
+
+/* section heads */
+.head{text-align:center;max-width:780px;margin:0 auto 56px}
+.head .sub{margin-top:16px}
+
+/* coverflow / chapters */
+.flow{display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:30px calc(50% - 210px) 50px;scrollbar-width:none;perspective:1400px;-webkit-overflow-scrolling:touch}
+.flow::-webkit-scrollbar{display:none}
+.flow>*{scroll-snap-align:center;flex:0 0 420px;transition:transform .5s var(--ease),opacity .5s;will-change:transform}
+.chapter{border-radius:34px;padding:34px;min-height:440px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;color:#fff}
+.chapter .yr{font-size:13px;font-weight:600;opacity:.8}
+.chapter h3{font-size:32px;font-weight:700;letter-spacing:-.035em;line-height:1.08;margin:10px 0 14px}
+.chapter p{font-size:15.5px;opacity:.9;line-height:1.5}
+.chapter .num{font-family:var(--serif);font-style:italic;font-size:120px;line-height:.8;opacity:.22;position:absolute;right:24px;top:20px}
+.c1{background:linear-gradient(150deg,#f2a25c,#b4532e)}
+.c2{background:linear-gradient(150deg,#6fb08e,#2e6d5d)}
+.c3{background:linear-gradient(150deg,#6f9be3,#3448a0)}
+.c4{background:linear-gradient(150deg,#a687db,#5a4196)}
+.c5{background:linear-gradient(150deg,#f78a3c,#c94b72)}
+.flow-ctrl{display:flex;justify-content:center;align-items:center;gap:14px}
+.flow-ctrl button{width:44px;height:44px;border-radius:50%;border:0;cursor:pointer;display:grid;place-items:center}
+.dots{display:flex;gap:7px}
+.dots i{width:7px;height:7px;border-radius:999px;background:var(--hair);transition:all .4s var(--ease)}
+.dots i.on{width:24px;background:var(--ink)}
+
+/* Kural fold */
+.kural{background:radial-gradient(60% 45% at 18% 12%,rgba(255,206,120,.30),transparent 70%),radial-gradient(50% 40% at 85% 85%,rgba(226,120,154,.35),transparent 70%),linear-gradient(175deg,#26306e 0%,#3d3180 50%,#6a3f86 100%);color:#f6f2ff;overflow:hidden}
+.kural .head .sub{color:#d9d1f5}
+.fold{display:grid;grid-template-columns:1fr 1fr;max-width:1000px;margin:0 auto;perspective:1800px}
+.leaf{padding:54px 48px;min-height:380px;display:flex;flex-direction:column;justify-content:center;transition:transform .1s linear;will-change:transform}
+.leaf.left{border-radius:36px 0 0 36px;transform-origin:right center;background:linear-gradient(160deg,rgba(255,255,255,.14),rgba(255,255,255,.05));border:1px solid rgba(255,255,255,.08);border-right:0}
+.leaf.right{border-radius:0 36px 36px 0;transform-origin:left center;background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.08);position:relative}
+.leaf.right::before{content:"";position:absolute;left:0;top:10%;bottom:10%;width:1px;background:linear-gradient(transparent,rgba(255,255,255,.25),transparent)}
+.tamil{font-family:var(--tamil);font-size:clamp(21px,2.1vw,26px);line-height:1.8;color:#ffe1a3}
+.kmeta{font-size:13px;color:#cfc6ef;margin-top:22px}
+.trans{font-family:var(--serif);font-size:clamp(25px,2.6vw,32px);line-height:1.3;font-style:italic}
+.why{margin-top:22px;font-size:16px;color:#ece6ff;line-height:1.6}
+
+/* stacked cards (Ask Act Lead) */
+.stack{max-width:860px;margin:0 auto;display:grid;gap:26px}
+.scard{position:sticky;border-radius:36px;padding:44px 44px 48px;min-height:300px;display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center}
+.scard:nth-child(1){top:110px}.scard:nth-child(2){top:130px}.scard:nth-child(3){top:150px}
+.scard .big{font-size:clamp(56px,8vw,96px);font-weight:700;letter-spacing:-.06em;line-height:.9}
+.scard h3{font-size:28px;letter-spacing:-.03em;margin-bottom:10px}
+.scard p{color:var(--ink-2)}
+.saying{text-align:center;font-family:var(--serif);font-style:italic;font-size:clamp(26px,3.2vw,38px);margin-top:70px;line-height:1.25}
+
+/* research */
+.rgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+.rcard{border-radius:30px;padding:32px 28px;transition:transform .5s var(--ease)}
+.rcard:hover{transform:translateY(-6px)}
+.rcard .k{font-size:13px;font-weight:600;color:var(--accent)}
+.rcard h4{font-size:24px;letter-spacing:-.03em;margin:8px 0 10px;line-height:1.15}
+.rcard p{font-size:15.5px;color:var(--ink-2)}
+.lede{max-width:780px;margin:0 auto 46px;text-align:center;font-size:clamp(22px,2.4vw,28px);line-height:1.38;letter-spacing:-.025em;font-weight:500}
+.lede em{font-family:var(--serif);font-weight:400;font-size:1.15em;color:var(--accent)}
+
+/* stories coverflow */
+.story{border-radius:30px;overflow:hidden;display:flex;flex-direction:column;background:var(--bg-2);border:1px solid var(--hair);box-shadow:0 30px 60px -30px rgba(0,0,0,.35)}
+.story .img{aspect-ratio:1/1;position:relative}
+.story .img small{position:absolute;left:14px;bottom:12px;font-size:11px;color:rgba(255,255,255,.85);padding:4px 10px;border-radius:999px;background:rgba(0,0,0,.2);backdrop-filter:blur(8px)}
+.story .body{padding:22px 24px 26px}
+.story .cat{font-size:12.5px;font-weight:600;color:var(--warm)}
+.story h3{font-size:23px;letter-spacing:-.03em;line-height:1.15;margin:6px 0 8px}
+.story p{font-size:14.5px;color:var(--muted)}
+.flow.stories>*{flex-basis:340px}
+.flow.stories{padding-left:calc(50% - 170px);padding-right:calc(50% - 170px)}
+
+/* engage */
+.engage .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+.panel{border-radius:34px;padding:30px}
+.panel h4{font-size:21px;letter-spacing:-.025em}
+.stars{display:flex;gap:4px;margin:14px 0 4px}
+.stars button{background:none;border:0;cursor:pointer;font-size:32px;line-height:1;color:var(--hair);transition:transform .25s var(--ease),color .2s}
+.stars button.on{color:#f2b84b}
+.stars button:hover{transform:scale(1.2)}
+.rmsg{font-size:13.5px;color:var(--muted);min-height:20px}
+.reacts{display:flex;gap:8px;flex-wrap:wrap;margin:16px 0 18px}
+.reacts button{font-size:13.5px;border:1px solid var(--hair);background:var(--bg-2);padding:8px 14px;border-radius:999px;cursor:pointer;transition:all .3s var(--ease)}
+.reacts button.on{background:var(--accent);border-color:var(--accent);color:#fff;transform:scale(1.04)}
+textarea{width:100%;min-height:84px;border:1px solid var(--hair);border-radius:18px;background:var(--bg-2);color:var(--ink);padding:14px;font:inherit;font-size:15px;resize:vertical}
+.comment{display:flex;gap:12px;padding:14px 0;border-top:1px solid var(--hair);font-size:15px}
+.av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--warm),#3c4fae);color:#fff;display:grid;place-items:center;font-size:12px;font-weight:600;flex-shrink:0}
+.comment small{color:var(--muted);margin-left:6px}
+.share{display:flex;gap:8px;align-items:center;margin-top:18px;padding-top:16px;border-top:1px solid var(--hair);font-size:13.5px;color:var(--muted);flex-wrap:wrap}
+.share button{font-size:13px;border:1px solid var(--hair);background:var(--bg-2);padding:7px 13px;border-radius:999px;cursor:pointer}
+.feat{display:grid;gap:18px;margin-top:28px}
+.feat>div{display:grid;grid-template-columns:44px 1fr;gap:14px;align-items:start}
+.feat .ic{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;color:var(--accent)}
+.feat b{display:block;font-size:16px}
+.feat span{color:var(--ink-2);font-size:15px}
+
+/* newsletter */
+.news .box{border-radius:44px;padding:80px 34px;text-align:center;position:relative;overflow:hidden;color:#fff;background:linear-gradient(135deg,#3c4fae,#7a5bc4 52%,#f5782a)}
+.news .box .sub{color:rgba(255,255,255,.82);max-width:520px;margin:16px auto 0}
+.news form{display:flex;gap:10px;max-width:470px;margin:34px auto 0;padding:6px;border-radius:999px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(20px)}
+.news input{flex:1;min-width:0;border:0;background:transparent;color:#fff;padding:12px 16px;font:inherit;font-size:16px;outline:none}
+.news input::placeholder{color:rgba(255,255,255,.7)}
+.news .pill-btn{background:#fff;color:#221f45;padding:12px 20px;font-size:15px}
+.news small{display:block;margin-top:16px;opacity:.7;font-size:13px}
+
+footer{padding:50px 0 60px;font-size:13px;color:var(--muted);border-top:1px solid var(--hair)}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer nav{display:flex;gap:20px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(40px) scale(.98);transition:opacity 1s var(--ease),transform 1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.proto{position:fixed;top:76px;right:16px;z-index:60;font-size:11.5px;padding:6px 12px;border-radius:999px;color:var(--ink-2)}
+
+@media (max-width:980px){
+  .hero .grid,.engage .grid{grid-template-columns:1fr}
+  .portrait{max-width:420px;width:100%;margin:0 auto;aspect-ratio:4/4.3}
+  .rail{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -22px;padding:4px 22px 10px}
+  .rail::-webkit-scrollbar{display:none}
+  .tile{flex:0 0 200px;scroll-snap-align:start}
+  .rgrid{grid-template-columns:1fr}
+}
+@media (max-width:720px){
+  body{font-size:16px;padding-bottom:90px}
+  .wrap{padding:0 16px}
+  section{padding:84px 0}
+  .nav a.l,.nav .pill-btn{display:none}
+  .nav{width:auto;padding:8px 16px;left:16px;transform:none}
+  .proto{top:18px;right:16px}
+  .hero{padding-top:100px;min-height:auto}
+  .rail{margin:0 -16px;padding:4px 16px 10px}
+  .flow{padding-left:calc(50% - 150px);padding-right:calc(50% - 150px);gap:14px}
+  .flow>*{flex-basis:300px}
+  .chapter{min-height:420px;padding:28px}
+  .chapter h3{font-size:27px}
+  .flow.stories{padding-left:calc(50% - 140px);padding-right:calc(50% - 140px)}
+  .flow.stories>*{flex-basis:280px}
+  .fold{grid-template-columns:1fr}
+  .leaf{padding:36px 26px;min-height:0}
+  .leaf.left{border-radius:30px 30px 0 0;transform-origin:center bottom;border-right:1px solid rgba(255,255,255,.08);border-bottom:0}
+  .leaf.right{border-radius:0 0 30px 30px;transform-origin:center top}
+  .leaf.right::before{left:10%;right:10%;top:0;bottom:auto;width:auto;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.25),transparent)}
+  .scard{grid-template-columns:1fr;gap:12px;padding:30px;min-height:260px}
+  .scard:nth-child(1){top:80px}.scard:nth-child(2){top:96px}.scard:nth-child(3){top:112px}
+  .panel{padding:22px;border-radius:28px}
+  .news .box{padding:56px 20px;border-radius:32px}
+  .tabbar{display:flex;position:fixed;bottom:max(14px,env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);z-index:90;border-radius:999px;padding:6px;gap:2px;width:calc(100% - 32px);max-width:420px;justify-content:space-between}
+  .tabbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10px;font-weight:600;color:var(--muted);padding:7px 0;border-radius:999px;transition:all .35s var(--ease)}
+  .tabbar a svg{width:21px;height:21px}
+  .tabbar a.on{color:var(--accent);background:var(--hair)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+
+/* experience segmented control */
+.segment{position:relative;display:grid;grid-template-columns:repeat(3,1fr);max-width:560px;margin:0 auto 38px;padding:5px;border-radius:999px}
+.segment button{position:relative;z-index:1;border:0;background:none;cursor:pointer;padding:11px 8px;font-size:15px;font-weight:600;color:var(--ink-2);border-radius:999px;transition:color .35s}
+.segment button[aria-selected="true"]{color:var(--ink)}
+.seg-thumb{position:absolute;top:5px;bottom:5px;left:5px;width:calc((100% - 10px)/3);border-radius:999px;background:var(--bg-2);box-shadow:0 3px 12px rgba(0,0,0,.12);transition:transform .5s var(--ease)}
+.seg-panel{display:none;grid-template-columns:repeat(2,1fr);gap:18px}
+.seg-panel.on{display:grid;animation:segIn .6s var(--ease)}
+@keyframes segIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.role{border-radius:30px;padding:30px 30px 26px;display:flex;flex-direction:column}
+.role .when{font-size:13px;font-weight:600;color:var(--warm)}
+.role h3{font-size:24px;letter-spacing:-.03em;line-height:1.15;margin:8px 0 4px}
+.role .where{font-size:14.5px;color:var(--muted);margin-bottom:14px}
+.role ul{padding-left:18px;display:grid;gap:7px;font-size:15px;color:var(--ink-2);margin-bottom:16px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.chips span,.strengths span{font-size:12.5px;font-weight:600;padding:6px 11px;border-radius:999px;background:color-mix(in srgb,var(--accent) 10%,transparent);color:var(--accent)}
+.shaped{margin-top:auto;padding-top:14px;border-top:1px solid var(--hair);font-size:15px;color:var(--ink-2)}
+.shaped b{color:var(--ink)}
+/* quotes */
+.flow.quotes>*{flex-basis:440px}
+.flow.quotes{padding-left:calc(50% - 220px);padding-right:calc(50% - 220px)}
+.quote-card{border-radius:34px;padding:38px 34px;min-height:270px;display:flex;flex-direction:column;justify-content:space-between;margin:0}
+.quote-card blockquote{font-family:var(--serif);font-style:italic;font-size:27px;line-height:1.3}
+.quote-card figcaption{font-size:13.5px;color:var(--muted);margin-top:22px;font-weight:500}
+.strengths{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:40px;max-width:820px}
+@media (max-width:980px){.seg-panel,.seg-panel.on{grid-template-columns:1fr}}
+@media (max-width:720px){.segment button{font-size:13px;padding:10px 4px}.role{padding:24px 22px}
+ .flow.quotes>*{flex-basis:300px}.flow.quotes{padding-left:calc(50% - 150px);padding-right:calc(50% - 150px)}.quote-card{padding:28px 24px;min-height:240px}.quote-card blockquote{font-size:23px}}
+
+.tight-top{padding-top:40px}
+
+/* ---------- experience folders ---------- */
+#roles .wrap>.flow-ctrl{margin-top:0}
+.flow.folders{padding-left:calc(50% - 180px);padding-right:calc(50% - 180px)}
+.flow.folders>*{flex-basis:360px}
+.folder{position:relative;border:0;cursor:pointer;text-align:left;color:#fff;border-radius:8px 30px 30px 30px;padding:34px 28px 26px;min-height:300px;display:flex;flex-direction:column;gap:8px;font:inherit;box-shadow:0 30px 60px -30px rgba(0,0,0,.45);margin-top:22px}
+.fold-tab{position:absolute;left:0;top:-20px;width:44%;height:24px;border-radius:14px 14px 0 0;background:inherit;filter:brightness(1.12)}
+.fold-tab::after{content:"";position:absolute;right:-18px;bottom:0;width:24px;height:24px;background:inherit;clip-path:polygon(0 0,0 100%,100% 100%);border-top-right-radius:10px}
+.fd1{background:linear-gradient(155deg,#f6a056,#c7562f)}
+.fd2{background:linear-gradient(155deg,#6f9be3,#3448a0)}
+.fd3{background:linear-gradient(155deg,#6f9be3,#3448a0)}
+.folder::before{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.22),transparent 40%);pointer-events:none}
+.f-when{font-size:13px;font-weight:600;opacity:.85}
+.f-title{font-size:34px;font-weight:700;letter-spacing:-.04em;line-height:1.05}
+.f-desc{font-size:15.5px;opacity:.9;line-height:1.45}
+.f-count{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:600;padding-top:16px;border-top:1px solid rgba(255,255,255,.25)}
+.f-count i{font-style:normal;padding:7px 14px;border-radius:999px;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(8px)}
+.folder:focus-visible{outline:3px solid var(--accent);outline-offset:4px}
+
+/* sheet */
+.sheet-wrap{position:fixed;inset:0;z-index:200;display:flex;align-items:center;justify-content:center}
+.sheet-wrap[hidden]{display:none}
+.sheet-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.32);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);opacity:0;transition:opacity .4s var(--ease)}
+.sheet{position:relative;width:min(880px,calc(100% - 40px));max-height:min(86vh,900px);display:flex;flex-direction:column;border-radius:34px;background:color-mix(in srgb,var(--bg) 82%,transparent);border:1px solid var(--glass-brd);backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%);box-shadow:0 40px 100px -30px rgba(0,0,0,.5);transform:translateY(40px) scale(.96);opacity:0;transition:transform .55s var(--ease),opacity .4s var(--ease)}
+.sheet-wrap.open .sheet-backdrop{opacity:1}
+.sheet-wrap.open .sheet{transform:none;opacity:1}
+.grabber{display:none}
+.sheet-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;padding:26px 28px 14px}
+.sheet-head .f-when{color:var(--warm);opacity:1}
+.sheet-head h3{font-size:30px;letter-spacing:-.035em;line-height:1.1;margin-top:4px}
+.sheet-close{width:36px;height:36px;flex-shrink:0;border-radius:50%;border:0;cursor:pointer;background:var(--hair);font-size:24px;line-height:1;color:var(--ink-2)}
+.sheet-body{overflow-y:auto;padding:6px 28px 28px;display:grid;grid-template-columns:1fr 1fr;gap:12px;align-content:start;grid-auto-rows:max-content;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+body.sheet-lock{overflow:hidden}
+
+/* role subfolders inside the sheet */
+.sheet-body .role{display:block;height:auto;padding:0;border-radius:22px;overflow:visible;background:var(--bg-2);border:1px solid var(--hair);box-shadow:none;transition:box-shadow .3s}
+.sheet-body .role.open{grid-column:1/-1;box-shadow:0 18px 40px -24px rgba(0,0,0,.35)}
+.role-head{display:grid;grid-template-columns:40px 1fr 28px;gap:12px;align-items:start;padding:18px;cursor:pointer;user-select:none}
+.role-head:focus-visible{outline:3px solid var(--accent);outline-offset:-3px;border-radius:22px}
+.role-ic{width:40px;height:34px;border-radius:4px 10px 10px 10px;position:relative;background:linear-gradient(155deg,var(--accent),var(--accent-2))}
+.role-ic::before{content:"";position:absolute;left:0;top:-6px;width:50%;height:8px;border-radius:5px 5px 0 0;background:inherit;filter:brightness(1.15)}
+.role-head .when{font-size:12px}
+.role-head h3{font-size:18px;margin:3px 0 2px}
+.role-head .where{font-size:13.5px;margin:0}
+.chev{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:var(--hair);font-size:16px;transition:transform .4s var(--ease)}
+.role.open .chev{transform:rotate(45deg)}
+.role-body{display:none}
+.role.open .role-body{display:block;animation:segIn .45s var(--ease)}
+.role-body>div{padding:0 20px 20px}
+.role-body h4{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:6px 0 8px}
+.role-body ul{margin-bottom:14px}
+.role-body .shaped{margin-top:0}
+
+@media (max-width:720px){
+  .flow.folders{padding-left:calc(50% - 145px);padding-right:calc(50% - 145px)}
+  .flow.folders>*{flex-basis:290px}
+  .folder{min-height:270px;padding:30px 22px 22px}
+  .f-title{font-size:29px}
+  .sheet-wrap{align-items:flex-end}
+  .sheet{width:100%;max-height:90vh;border-radius:30px 30px 0 0;transform:translateY(100%);opacity:1;padding-bottom:env(safe-area-inset-bottom)}
+  .grabber{display:block;width:40px;height:5px;border-radius:3px;background:var(--hair);margin:10px auto 0}
+  .sheet-head{padding:14px 18px 10px}
+  .sheet-head h3{font-size:25px}
+  .sheet-body{grid-template-columns:1fr;padding:4px 14px 24px}
+  .sheet-body .role.open{grid-column:auto}
+}
+.wrap-narrow{max-width:720px;margin:0 auto;padding:0 22px}
+/* ---------- Daily reflections ---------- */
+.daily-card{display:block;padding:30px 30px 26px;border-radius:28px;color:var(--ink);transition:transform .4s var(--ease)}
+.daily-card:hover{transform:translateY(-3px)}
+.daily-card h3{font-size:clamp(24px,3vw,32px);font-weight:700;letter-spacing:-.03em;line-height:1.15;margin:8px 0 10px}
+.daily-card p{color:var(--ink-2);font-size:17px}
+.daily-link{display:inline-block;margin-top:14px;font-size:15px;font-weight:600;color:var(--accent)}
+.more-link{font-size:15px;font-weight:600;color:var(--accent)}
+.dailies{display:grid;gap:22px;margin-top:10px}
+.daily-item{padding:28px;border-radius:26px}
+.daily-item h2{font-size:clamp(24px,3vw,30px);letter-spacing:-.03em;line-height:1.15;margin:6px 0 12px}
+.daily-item h2 a{color:var(--ink)}
+.daily-body{font-size:17px;color:var(--ink-2)}
+.daily-body p+p{margin-top:12px}
+
+/* ---------- Podcast ---------- */
+.episodes{display:grid;gap:16px;max-width:860px}
+.episode{display:flex;gap:18px;align-items:center;padding:16px;border-radius:24px;color:var(--ink);transition:transform .4s var(--ease)}
+.episode:hover{transform:translateY(-3px)}
+.ep-art{position:relative;flex:0 0 96px;height:96px;border-radius:18px;overflow:hidden;background:linear-gradient(135deg,var(--accent),var(--accent-2) 60%,var(--warm));display:grid;place-items:center}
+.ep-art img{width:100%;height:100%;object-fit:cover}
+.ep-wave{display:flex;gap:4px;align-items:center;height:44px}
+.ep-wave i{width:4px;border-radius:4px;background:rgba(255,255,255,.9);animation:wave 1.4s ease-in-out infinite}
+.ep-wave i:nth-child(1){height:30%}.ep-wave i:nth-child(2){height:70%;animation-delay:.1s}.ep-wave i:nth-child(3){height:45%;animation-delay:.2s}.ep-wave i:nth-child(4){height:95%;animation-delay:.3s}.ep-wave i:nth-child(5){height:55%;animation-delay:.4s}.ep-wave i:nth-child(6){height:80%;animation-delay:.5s}.ep-wave i:nth-child(7){height:35%;animation-delay:.6s}
+@keyframes wave{50%{transform:scaleY(.45)}}
+.ep-play{position:absolute;right:8px;bottom:8px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.92);color:#111;box-shadow:0 4px 14px rgba(0,0,0,.25)}
+.ep-text .cat{font-size:13px;font-weight:600;color:var(--warm)}
+.ep-text h3{font-size:20px;letter-spacing:-.02em;line-height:1.2;margin:4px 0 6px}
+.ep-text p{font-size:14.5px;color:var(--muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gh-content .kg-audio-card{border-radius:22px}
+@media (prefers-reduced-motion:reduce){.ep-wave i{animation:none}}
+@media (max-width:560px){.ep-art{flex-basis:76px;height:76px}.ep-text h3{font-size:17px}}
+
+/* ---------- Life code ---------- */
+.motto{text-align:center;padding:110px 0}
+.motto-line{font-size:clamp(30px,4.6vw,56px);font-weight:700;letter-spacing:-.035em;line-height:1.12;margin:14px 0 22px}
+.motto-line .serif{font-weight:400}
+.motto-note{max-width:560px;margin:0 auto;font-size:18px;color:var(--muted)}
+
+/* ---------- Rights notice ---------- */
+footer .rights{display:block;width:100%;font-size:12.5px;color:var(--muted);margin-top:14px;line-height:1.5}
+
+/* motto second line */
+.motto-second{font-size:clamp(22px,2.8vw,32px);font-weight:600;letter-spacing:-.025em;line-height:1.2;margin:0 0 24px;color:var(--ink-2)}
+.motto-second .serif{color:var(--orange)}
+
+/* dark mode: dark text on light-sky accent fills */
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary,:root:not([data-theme="light"]) .reacts button.on{color:#16173a}}
+:root[data-theme="dark"] .btn.primary,:root[data-theme="dark"] .reacts button.on{color:#16173a}
+/* ---------- Membership ---------- */
+.lock-badge{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);vertical-align:1px}
+.news-cta{margin-top:30px}
+.news-cta .pill-btn{display:inline-block;padding:15px 26px;font-size:16px}
+.news form{margin-top:18px}
+.news .pill-btn.ghost{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.4)}
+/* ---------- Academic upgrade ---------- */
+.model{border-radius:30px;padding:30px 28px;margin-top:34px}
+.model-path{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap}
+.node{padding:12px 18px;border-radius:999px;font-size:15px;font-weight:600;background:var(--bg-2);border:1px solid var(--hair)}
+.node.hot{color:#fff;background:linear-gradient(135deg,var(--accent),var(--orange));border-color:transparent}
+.arrow{width:46px;height:2px;background:linear-gradient(90deg,var(--accent),var(--orange));position:relative;overflow:hidden;border-radius:2px}
+.arrow::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(255,255,255,.9),transparent);transform:translateX(-100%);animation:pulse 2.6s var(--ease) infinite}
+@keyframes pulse{to{transform:translateX(100%)}}
+.model-note{max-width:640px;margin:18px auto 0;text-align:center;font-size:15px;color:var(--muted)}
+.lab{border-radius:30px;padding:10px;margin-top:18px}
+.lab-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:4px;border-radius:999px;background:var(--hair)}
+.lab-tabs button{border:0;background:transparent;color:var(--ink-2);font:inherit;font-size:14.5px;font-weight:600;padding:11px 8px;border-radius:999px;cursor:pointer;transition:background .35s var(--ease),color .35s}
+.lab-tabs button[aria-selected="true"]{background:var(--bg-2);color:var(--ink);box-shadow:0 4px 14px rgba(20,38,54,.12)}
+.lab-tabs button:focus-visible,.icon-btn:focus-visible,.cite-copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.lab-panel{padding:26px 22px 20px;animation:segIn .45s var(--ease)}
+.lab-q{font-size:clamp(21px,2.4vw,27px);font-weight:700;letter-spacing:-.025em;line-height:1.2;text-wrap:balance}
+.lab-facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin:20px 0}
+.lab-facts div{padding:14px 16px;border-radius:18px;background:var(--bg-2);border:1px solid var(--hair);min-width:0}
+.lab-facts dt{font-size:12px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.lab-facts dd{margin:4px 0 0;font-size:15px;font-weight:500}
+.lab-panel>p{color:var(--ink-2);max-width:680px}
+.status{display:inline-block;padding:2px 10px;border-radius:999px;font-size:13px;font-weight:600;color:var(--warm);background:color-mix(in srgb,var(--warm) 13%,transparent)}
+.status.done{color:var(--accent-2);background:color-mix(in srgb,var(--accent-2) 14%,transparent)}
+.profiles{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:22px}
+.chip{padding:9px 16px;border-radius:999px;font-size:14px;font-weight:600;color:var(--ink)}
+.icon-btn{width:36px;height:36px;border-radius:50%;border:0;display:grid;place-items:center;background:transparent;color:var(--ink-2);cursor:pointer;transition:background .3s}
+.icon-btn:hover{background:var(--hair)}
+.progress{position:fixed;top:0;left:0;right:0;height:3px;z-index:60;pointer-events:none}
+.progress i{display:block;height:100%;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--accent),var(--orange))}
+.toc{margin:0 0 30px;padding:20px 22px;border-radius:22px}
+.toc h4{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+.toc ol{margin:0;padding-left:20px;display:grid;gap:6px;font-size:15.5px}
+.toc a{color:var(--ink-2)}.toc a.on{color:var(--accent);font-weight:600}
+.cite{margin-top:30px}
+.cite h4{margin:0 0 10px}
+.cite-text{font-size:15px;color:var(--ink-2);padding-left:2em;text-indent:-2em;word-break:break-word}
+.cite-copy{margin-top:14px;border:1px solid var(--hair);background:var(--bg-2);color:var(--ink);font:inherit;font-size:14px;font-weight:600;padding:9px 16px;border-radius:999px;cursor:pointer}
+.gh-content .footnotes{margin-top:40px;padding-top:20px;border-top:1px solid var(--hair);font-size:15px;color:var(--ink-2)}
+.gh-content sup a{color:var(--accent);font-weight:600}
+.spot{position:relative}
+.spot::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .4s;background:radial-gradient(260px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.35),transparent 60%)}
+.spot:hover::before{opacity:1}
+@media (prefers-reduced-motion:reduce){.arrow::after{animation:none}.lab-panel{animation:none}}
+@media (max-width:560px){.arrow{width:2px;height:22px;background:linear-gradient(180deg,var(--accent),var(--orange))}.model-path{flex-direction:column}.lab-tabs button{font-size:13px;padding:10px 4px}}
+
+/* conference presentations list */
+.role-body ul.pres{list-style:none;padding:0;display:grid;gap:12px}
+.pres li{padding:12px 14px;border-radius:16px;background:var(--bg-2);border:1px solid var(--hair)}
+.pres-meta{font-size:12.5px;font-weight:600;color:var(--warm);display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.pres-conf{font-size:14px;font-weight:600;margin-top:3px}
+.pres-title{font-size:14px;color:var(--ink-2);margin-top:2px}
+.pres-type{color:var(--muted)}
+
+/* ==========================================================
+   APP MODE: phones only (desktop layout is untouched)
+   ========================================================== */
+.nav-title,.mini{display:none}
+@media (max-width:720px){
+  html{-webkit-tap-highlight-color:transparent}
+  body{padding-bottom:calc(150px + env(safe-area-inset-bottom))}
+  /* top app bar: brand pill becomes a full-width bar with a live section title */
+  .nav{top:0;left:0;right:0;width:100%;transform:none;border-radius:0;border-width:0 0 1px;padding:calc(8px + env(safe-area-inset-top)) max(12px,env(safe-area-inset-right)) 8px max(16px,env(safe-area-inset-left));gap:4px;background:color-mix(in srgb,var(--bg) 62%,transparent);transition:background .35s var(--ease)}
+  .nav .brand{transition:opacity .3s var(--ease),transform .4s var(--ease)}
+  .nav-title{display:block;position:absolute;left:50%;top:calc(50% + env(safe-area-inset-top)/2);transform:translate(-50%,-30%);font-size:16px;font-weight:700;letter-spacing:-.02em;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .3s var(--ease),transform .4s var(--ease)}
+  body.compact .nav .brand{opacity:0;transform:translateY(-6px)}
+  body.compact .nav-title{opacity:1;transform:translate(-50%,-50%)}
+  body.compact .proto{opacity:0;pointer-events:none}
+  .proto{transition:opacity .3s;top:calc(62px + env(safe-area-inset-top))}
+  /* tighter, left-aligned section headers, like an app's shelves */
+  section{padding:56px 0}
+  section.tight-top{padding-top:28px}
+  .head{text-align:left;margin:0 0 22px;padding:0 16px}
+  .wrap.head{padding:0 16px}
+  .head .h-l{font-size:32px;line-height:1.08}
+  .head .sub{font-size:16.5px;margin-top:8px}
+  .kicker{font-size:13px}
+  .hero{padding-top:calc(86px + env(safe-area-inset-top))}
+  .hero .h-xl{font-size:clamp(38px,10.5vw,48px)}
+  /* story and episode shelves: left-aligned with the next card peeking */
+  .flow.stories{padding-left:16px;padding-right:16px;scroll-padding-left:16px;perspective:none}
+  .flow.stories>*{flex-basis:78%;scroll-snap-align:start;transform:none !important;opacity:1 !important}
+  .rgrid{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:12px;margin:0 -16px;padding:4px 16px 12px}
+  .rgrid::-webkit-scrollbar{display:none}
+  .rgrid>*{flex:0 0 82%;scroll-snap-align:start}
+  .wrap.rgrid{margin:0;padding:4px 16px 12px}
+  /* episodes as a track list */
+  .episodes{gap:0;border-radius:24px;overflow:hidden;background:var(--glass);border:1px solid var(--glass-brd);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%)}
+  .episodes .episode{border-radius:0;background:transparent;border:0;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;padding:12px 14px}
+  .episodes .episode+.episode{border-top:1px solid var(--hair)}
+  .episodes .ep-art{flex-basis:64px;height:64px;border-radius:14px}
+  .episodes .ep-play{width:26px;height:26px;right:5px;bottom:5px}
+  .episodes .ep-text p{display:none}
+  /* press feedback */
+  a,button{-webkit-user-select:none;user-select:none}
+  .story,.episode,.daily-card,.folder,.chapter,.rcard,.tile,.btn,.pill-btn,.chip,.tabbar a,.role-head{transition:transform .25s var(--ease)}
+  .story:active,.episode:active,.daily-card:active,.folder:active,.rcard:active,.tile:active,.btn:active,.pill-btn:active,.chip:active,.role-head:active{transform:scale(.97)}
+  .tabbar a:active{transform:scale(.9)}
+  /* mini player above the tab bar */
+  .mini{display:flex;align-items:center;gap:12px;position:fixed;z-index:89;left:50%;transform:translateX(-50%);bottom:calc(max(14px,env(safe-area-inset-bottom)) + 68px);width:calc(100% - 32px);max-width:420px;padding:8px 10px 8px 8px;border-radius:20px;color:var(--ink);transition:transform .45s var(--ease),opacity .3s}
+  .mini-art{flex:0 0 44px;height:44px;border-radius:11px;overflow:hidden;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent-2) 60%,var(--orange))}
+  .mini-art img{width:100%;height:100%;object-fit:cover}
+  .mini-art .ep-wave{height:22px;gap:3px}
+  .mini-art .ep-wave i{width:3px}
+  .mini-text{flex:1;min-width:0}
+  .mini-text small{display:block;font-size:11px;font-weight:600;color:var(--warm)}
+  .mini-text b{display:block;font-size:14.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mini-play{flex:0 0 36px;height:36px;border-radius:50%;display:grid;place-items:center;background:var(--ink);color:var(--bg)}
+  body.sheet-open .mini,body.hide-mini .mini{transform:translate(-50%,160%);opacity:0}
+}
+
+/* storybook film grade: lantern glow on the hero name and soft gold sparkle on gradient text */
+.grad{background:linear-gradient(100deg,var(--accent),var(--warm) 45%,var(--rose) 70%,var(--orange))!important;-webkit-background-clip:text!important;background-clip:text!important}
+.serif{font-variation-settings:"SOFT" 100,"WONK" 1;font-style:italic}
+.kural .kicker{color:var(--gold)}
+.tabbar a.on{color:var(--warm)}
+
+/* ---------- Courses, publications, gallery ---------- */
+.block-title{font-size:clamp(24px,2.6vw,30px);font-weight:700;letter-spacing:-.03em;margin:0 0 18px}
+.courses{margin-top:56px}
+.course-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.course{border-radius:26px;padding:24px 24px 22px;min-width:0}
+.course-code{font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--warm)}
+.course h4{font-size:21px;letter-spacing:-.025em;line-height:1.2;margin:6px 0 6px}
+.course-role{font-size:14px;font-weight:600;color:var(--accent);margin-bottom:10px}
+.course p{font-size:15px;color:var(--ink-2)}
+.course-prep{margin-top:16px;font-size:14.5px;color:var(--muted)}
+.rmp{margin-top:18px}
+.pubs{border-radius:30px;padding:28px;margin-top:18px}
+.pub{display:grid;grid-template-columns:auto 1fr;gap:14px;align-items:start;padding:14px 0;border-top:1px solid var(--hair)}
+.pub:first-of-type{border-top:0}
+.pub p{font-size:15.5px;color:var(--ink-2);padding-left:2em;text-indent:-2em}
+.pub .status{white-space:nowrap;margin-top:2px}
+.photos .img{aspect-ratio:4/3;height:auto}
+.photos .img img{width:100%;height:100%;object-fit:cover}
+.photos .img small{position:absolute;left:14px;bottom:12px;font-size:12px;font-weight:600;color:#fff;padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.photos .img{position:relative}
+.ph-a{background:linear-gradient(140deg,#9cc0f2,#3c4fae)}.ph-b{background:linear-gradient(140deg,#f9b067,#d0623a)}.ph-c{background:linear-gradient(140deg,#8fcaa8,#2e6d5d)}
+.ph-d{background:linear-gradient(140deg,#c3a6ec,#5a4196)}.ph-e{background:linear-gradient(140deg,#ffd29a,#e2789a)}.ph-f{background:linear-gradient(140deg,#a9c8f5,#7a5bc4)}.ph-g{background:linear-gradient(140deg,#f2a25c,#b4532e)}
+@media (max-width:720px){.course-grid{grid-template-columns:1fr}.pub{grid-template-columns:1fr;gap:6px}.pub p{padding-left:0;text-indent:0}}
+
+/* footer links wrap on small screens */
+footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
+
+/* recognition card */
+.honor-wrap{margin-bottom:26px}
+.honor{display:grid;grid-template-columns:minmax(0,260px) 1fr;gap:26px;align-items:center;padding:18px;border-radius:26px}
+.honor-img{border-radius:18px;overflow:hidden;aspect-ratio:4/3}
+.honor-img img{width:100%;height:100%;object-fit:cover;object-position:center 72%;display:block}
+.honor-text h3{font-family:var(--serif);font-size:clamp(22px,3vw,30px);margin:8px 0 8px;font-weight:600}
+.honor-text p{color:var(--ink-2);margin:0;line-height:1.55}
+@media (max-width:720px){.honor{grid-template-columns:1fr;gap:16px;padding:14px}}
+
+/* spotify link */
+.spotify-cta{text-align:center;margin-top:18px}.spotify-cta .btn{display:inline-flex;align-items:center;gap:8px}
+
+/* live site */
+.soon{padding:30px 26px;border-radius:26px;text-align:center}
+.soon h3{font-family:var(--serif);font-size:clamp(22px,3vw,30px);margin:0 0 8px;font-weight:600}
+.soon p{color:var(--ink-2);margin:0}
+.sp-embed{display:block;border:0;border-radius:18px;margin-top:8px}
+.news-cta .pill-btn+.pill-btn{margin-left:8px}
+@media (max-width:720px){.news-cta .pill-btn+.pill-btn{margin:10px 0 0}}
+</style>
+</head>
+<body>
+<div class="ambient"><i></i><i></i><i></i></div>
+
+<header class="nav glass">
+  <a href="#top" class="brand"><b>R</b>The Right to Ask</a>
+  <span class="nav-title" aria-hidden="true"></span>
+  <a class="l" href="#story">Story</a>
+  <a class="l" href="#kural">Kural</a>
+  <a class="l" href="#teaching">Teaching</a>
+  <a class="l" href="#today">Daily</a>
+  <a class="l" href="#listen">Podcast</a>
+  <a class="l" href="#stories">Weekly</a>
+  <a href="#subscribe" class="pill-btn">Follow</a>
+</header>
+
+<a class="mini glass" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener" aria-label="Listen to The Right to Ask on Spotify">
+  <span class="mini-art"><span class="ep-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></span>
+  <span class="mini-text"><small>Podcast &middot; on Spotify</small><b>The Right to Ask</b></span>
+  <span class="mini-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+</a>
+<nav class="tabbar glass" aria-label="Sections">
+  <a href="#top" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 11 12 4l9 7v9H5z"/></svg>Home</a>
+  <a href="#story"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 5h7v15H4zM13 5h7v15h-7z"/></svg>Story</a>
+  <a href="#today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>Daily</a>
+  <a href="#listen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>Listen</a>
+  <a href="#stories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Weekly</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="kicker">Santhoshraj Srinivasan</div>
+      <h1 class="h-xl" style="margin-top:14px">Where I grew up, questions belonged to the powerful. <span class="serif grad">So I learned to ask.</span></h1>
+      <p class="sub">I grew up in a rural village in Tamil Nadu, India, watching my blind father fight his way to becoming a teacher. That fight led me to social work, with families in villages, prisons, and HIV programs across India. Today, at the University of Tennessee, I study why parents burn out under long-term stress, share that research at national conferences, and teach future social workers to ask better questions of the people they serve.</p>
+      <div class="ctas">
+        <a href="#stories" class="btn primary">Read this week's story</a>
+        <a href="#story" class="btn glass">My journey</a>
+      </div>
+    </div>
+    <div class="portrait rv" id="portrait">
+      <img src="images/portrait.jpg" alt="Santhoshraj Srinivasan">
+      <div class="label"><b>Santhoshraj Srinivasan</b><span>Social worker · Researcher · Teacher<br>PhD Candidate, University of Tennessee, Knoxville</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="wrap">
+  <div class="rail">
+    <div class="tile glass rv"><b class="grad">8</b><span>Indian languages I can work in professionally, across six states</span></div>
+    <div class="tile glass rv"><b class="grad">7</b><span>prisons where I counseled and taught</span></div>
+    <div class="tile glass rv"><b class="grad">2,000</b><span>incarcerated people my team reached through health education</span></div>
+    <div class="tile glass rv"><b class="grad">47</b><span>care-experienced young people I mentor toward education and a better future</span></div>
+    <div class="tile glass rv"><b class="grad">42</b><span>countries of parents in my dissertation research</span></div>
+  </div>
+</div>
+
+<!-- JOURNEY -->
+<section id="today" class="tight-top" style="padding-bottom:30px">
+  <div class="wrap-narrow">
+    <a class="daily-card glass rv" href="#today">
+      <div class="kicker">Today's reflection</div>
+      <h3>Learn the language before you try to help.</h3>
+      <p>A short reflection from my years in the field. New reflections will appear here.</p>
+      <span class="daily-link">Read and reflect &rarr;</span>
+    </a>
+      </div>
+</section>
+
+<section id="story">
+  <div class="wrap head rv">
+    <div class="kicker">My story</div>
+    <h2 class="h-l" style="margin-top:10px">Five chapters. <span class="serif">One question.</span></h2>
+    <p class="sub">Swipe through the places that made me. Wherever I worked, I learned the local language before I tried to help.</p>
+  </div>
+  <div class="flow" id="journey">
+    <article class="chapter c1"><span class="num">1</span><div class="yr">Childhood · Tamil Nadu</div><div><h3>My father's classroom</h3><p>English and higher education were out of reach for most families in my village. My father is blind, and he fought for his own education until he became a teacher. He taught me that education is something we reach for and hold on to.</p></div></article>
+    <article class="chapter c2"><span class="num">2</span><div class="yr">2017–2019 · MSW field work</div><div><h3>Learning social work in the field</h3><p>From a sanitation program in remote villages to psychiatric hospitals, to Adivasi communities affected by tuberculosis and HIV in the Nilgiris, and to families of people with serious mental illness in Kolkata.</p></div></article>
+    <article class="chapter c3"><span class="num">3</span><div class="yr">2019–2021 · Research and recovery</div><div><h3>Counting the families others miss</h3><p>As a field researcher, I helped gather data across 100 villages and reached households missing from official lists. As a rural mental health program coordinator, I worked alongside women living with serious mental illness and their families, in their own language.</p></div></article>
+    <article class="chapter c4"><span class="num">4</span><div class="yr">2021–2023 · Kerala and Tamil Nadu</div><div><h3>Prisons, HIV programs, and young people in care</h3><p>I counseled people in seven prisons, led evaluations of HIV prevention programs for the National AIDS Control Organization, and mentored adolescents in a residential care program, where we built a library together.</p></div></article>
+    <article class="chapter c5"><span class="num">5</span><div class="yr">2023–today · Knoxville, Tennessee</div><div><h3>Research and teaching</h3><p>As a PhD candidate at the University of Tennessee, I study parenting stress and parental burnout, and I teach Foundations of Social Work Research as instructor of record.</p></div></article>
+  </div>
+  <div class="flow-ctrl">
+    <button class="glass" aria-label="Previous" data-flow="journey" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div class="dots" id="journey-dots"></div>
+    <button class="glass" aria-label="Next" data-flow="journey" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
+</section>
+
+<section id="roles">
+  <div class="wrap head rv">
+    <div class="kicker">Experience</div>
+    <h2 class="h-l">Practitioner. Researcher. <span class="serif">Teacher.</span></h2>
+    <p class="sub">Three folders, four roles in each. Open one to see what I was responsible for, the skills it took, and how it shaped me.</p>
+  </div>
+  <div class="wrap">
+    <div class="flow folders" id="folderflow">
+      <button type="button" class="folder fd1" data-open="practice"><span class="fold-tab" aria-hidden="true"></span><span class="f-when">2017–2023 · India</span><span class="f-title">Practitioner</span><span class="f-desc">Mental health, prisons, youth care, and field education</span><span class="f-count">4 roles <i>Open</i></span></button>
+      <button type="button" class="folder fd2" data-open="research"><span class="fold-tab" aria-hidden="true"></span><span class="f-when">2019–today</span><span class="f-title">Researcher</span><span class="f-desc">Field research, HIV program evaluation, doctoral research, and conference presentations</span><span class="f-count">5 roles <i>Open</i></span></button>
+      <button type="button" class="folder fd3" data-open="teach"><span class="fold-tab" aria-hidden="true"></span><span class="f-when">India and the United States</span><span class="f-title">Leader &amp; Teacher</span><span class="f-desc">Classroom teaching, mentoring, and community training</span><span class="f-count">4 roles <i>Open</i></span></button>
+    </div>
+    <div class="flow-ctrl">
+      <button class="glass" aria-label="Previous" data-flow="folderflow" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button>
+      <div class="dots" id="folderflow-dots"></div>
+      <button class="glass" aria-label="Next" data-flow="folderflow" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button>
+    </div>
+    <div class="sheet-wrap" id="sheet" hidden>
+      <div class="sheet-backdrop" data-close></div>
+      <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+        <div class="grabber" aria-hidden="true"></div>
+        <header class="sheet-head"><div><div class="f-when" id="sheet-when"></div><h3 id="sheet-title"></h3></div><button type="button" class="sheet-close" data-close aria-label="Close">&times;</button></header>
+        <div class="sheet-body" id="sheet-body"></div>
+      </div>
+    </div>
+
+    <div class="folder-src" data-panel="practice" hidden>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2017–2019 · Tamil Nadu, Kerala, West Bengal</div><h3>Psychiatric Social Work Intern</h3><p class="where">MSW in Medical and Psychiatric Social Work: field education in villages, psychiatric hospitals, tribal communities, and a 30-day psychiatry placement at a medical college hospital</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Supported a total sanitation program in remote villages</li>
+          <li>Observed psychiatrists and psychiatric social workers, wrote case studies, and completed psychosocial assessments with patients and families</li>
+          <li>Made home visits and supported tuberculosis and HIV case-finding with four Adivasi (tribal) communities</li>
+          <li>Helped young people enroll in school and college and families obtain government certificates</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Psychosocial assessment</span><span>Case studies</span><span>Home visits</span><span>Family work</span></div><p class="shaped"><b>How it shaped me:</b> learning begins with careful observation and respect for people's language, culture, and the weight they carry at home.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2020 · Rural Tamil Nadu</div><h3>Rural Mental Health Program Coordinator</h3><p class="where">A community mental health program serving rural villages</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Coordinated clinic and community counseling and home visits across rural villages</li>
+          <li>Worked closely with women in rural communities, reading, writing, and speaking with them in the local language</li>
+          <li>Used critical time intervention to help women living with serious mental illness return to, and stay with, their families and communities</li>
+          <li>Taught residents and families to recognize psychiatric symptoms and seek treatment, and built local mental health leadership through community organizing</li>
+          <li>Served as an emergency medical social worker during COVID-19</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Counseling</span><span>Critical time intervention</span><span>Psychoeducation</span><span>Community organizing</span><span>Crisis response</span></div><p class="shaped"><b>How it shaped me:</b> psychiatric knowledge must be explained in plain language, and families are learners too.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2021–2022 · Kerala</div><h3>Correctional Counselor</h3><p class="where">A prison health project across seven prisons</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Counseled about 12 incarcerated people a day on mental health, substance use, HIV, and sexual and reproductive health</li>
+          <li>Counseled people in crisis, including those at risk of suicide, and helped them build insight and practical strategies for coping</li>
+          <li>Kept confidential records and prepared counseling reports</li>
+          <li>Delivered health education that, with my team, reached 2,000 incarcerated people</li>
+          <li>Trained 80 prison staff and 40 peer educators to recognize psychiatric symptoms and suicide risk</li>
+          <li>Led skill training for 200 people preparing for release, and supported staff facing burnout and suicidal thoughts</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Individual and group counseling</span><span>Suicide-risk response</span><span>Staff training</span><span>Trauma-informed care</span></div><p class="shaped"><b>How it shaped me:</b> how to teach adults who arrive tired, skeptical, or afraid, and that caring for helpers is part of the work.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2023 · Coastal Tamil Nadu</div><h3>Senior Youth Co-Worker</h3><p class="where">A residential care program for care-experienced young people</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Provided counseling and educational and career guidance to 35 adolescents, with monthly psychosocial assessments</li>
+          <li>Supervised youth care staff and managed the program budget</li>
+          <li>Coordinated with district child protection bodies, schools, and health services to secure education, health care, and legal entitlements</li>
+          <li>Built a library with doctors from a nearby hospital and invited authors to lead reading and storytelling sessions</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Youth mentoring</span><span>Case management</span><span>Interagency coordination</span><span>Staff supervision</span><span>Budgeting</span></div><p class="shaped"><b>How it shaped me:</b> young people rise to the expectations adults hold for them, and learning grows when a community is brought into the room.</p></div></div></article>
+    </div>
+
+    <div class="folder-src" data-panel="research" hidden>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2019 · Maharashtra</div><h3>Field Research Assistant</h3><p class="where">District development planning research with a state government</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Carried out development needs assessments that informed development plans for 27 blocks across two districts</li>
+          <li>Supported master's students and a large field team gathering household and institutional data across 100 tribal, rural, and urban villages</li>
+          <li>Used snowball sampling to reach households missing from official lists, so the most marginalized families were counted in district planning</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Survey fieldwork</span><span>Sampling</span><span>Team training</span><span>Community entry</span></div><p class="shaped"><b>How it shaped me:</b> research is a tool for counting the people others miss.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2021 · Tamil Nadu</div><h3>Research Associate</h3><p class="where">Social and environmental impact assessment of a solar energy project</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Built and led the team that evaluated the project</li>
+          <li>Reported findings to the commissioning institute and a central government body</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Impact evaluation</span><span>Team leadership</span><span>Report writing</span></div><p class="shaped"><b>How it shaped me:</b> evaluation is a team skill, and a clear report is a form of teaching.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2022 · Kerala and Tamil Nadu</div><h3>Evaluation Team Leader, National AIDS Control Organization</h3><p class="where">Annual evaluations with the Kerala and Tamil Nadu State AIDS Control Societies</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Led a field team evaluating HIV prevention projects for female sex workers, men who have sex with men, transgender communities, and truck drivers</li>
+          <li>Trained project staff to assess program quality and check program and financial data</li>
+          <li>Interviewed community members and peer educators without judgment, and educated communities on HIV and STI prevention</li>
+          <li>Evaluated targeted intervention projects across five districts of Tamil Nadu, and presented findings and recommendations at the state debriefing</li>
+          <li>Reported findings that guided program improvement to state and national bodies</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Program evaluation</span><span>Qualitative interviewing</span><span>Data quality</span><span>Stigma-sensitive practice</span></div><p class="shaped"><b>How it shaped me:</b> evidence must be gathered with respect for stigmatized people and used to improve their services.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2023–today · Knoxville, Tennessee</div><h3>PhD Researcher, University of Tennessee</h3><p class="where">Parenting stress, parental burnout, and adolescent well-being</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Three-paper dissertation: a systematic review of 18 studies, a longitudinal study of U.S. families, and a study of parents in 42 countries</li>
+          <li>Graduate research on parental well-being, school social work, and family-based prevention</li>
+          <li>Four first-authored manuscripts under review</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Structural equation modeling</span><span>Multilevel modeling</span><span>Systematic review</span><span>Qualitative analysis</span><span>Mplus · R · SPSS</span></div><p class="shaped"><b>How it shaped me:</b> the questions I carried from practice now have the methods they deserve.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2024–today · Across the United States</div><h3>Conference Presenter</h3><p class="where">Papers and posters at national social work and public health conferences, from Seattle to Washington, DC</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Presentations and accepted abstracts</h4><ul class="pres"><li><div class="pres-meta">November 2026 &middot; San Antonio, Texas <span class="status">Abstract accepted</span></div><div class="pres-conf">American Public Health Association Annual Meeting</div><div class="pres-title">A trauma-informed parenting framework for HIV-affected parents in stigmatized contexts <span class="pres-type">(Poster)</span></div></li><li><div class="pres-meta">October 2026 &middot; Atlanta, Georgia <span class="status">Abstract accepted</span></div><div class="pres-conf">Council on Social Work Education Annual Program Meeting</div><div class="pres-title">A relational model of parental trauma and burnout: Implications for parent–child relationships <span class="pres-type">(Presentation)</span></div></li><li><div class="pres-meta">January 2026 &middot; Washington, DC</div><div class="pres-conf">Society for Social Work and Research Annual Conference</div><div class="pres-title">Toward a trauma-informed prison system in India <span class="pres-type">(Poster)</span></div></li><li><div class="pres-meta">January 2026 &middot; Washington, DC</div><div class="pres-conf">Society for Social Work and Research Annual Conference</div><div class="pres-title">School social work roles, consultation, competencies, and systemic challenges <span class="pres-type">(Poster)</span></div></li><li><div class="pres-meta">October 2025 &middot; Denver, Colorado</div><div class="pres-conf">Council on Social Work Education Annual Program Meeting</div><div class="pres-title">Advancing trauma-informed reproductive healthcare in Indian prisons <span class="pres-type">(Presentation)</span></div></li><li><div class="pres-meta">January 2025 &middot; Seattle, Washington</div><div class="pres-conf">Society for Social Work and Research Annual Conference</div><div class="pres-title">Trauma-informed care for transgender individuals in India: A systematic review <span class="pres-type">(Presentation)</span></div></li><li><div class="pres-meta">October 2024 &middot; Kansas City, Missouri</div><div class="pres-conf">Council on Social Work Education Annual Program Meeting</div><div class="pres-title">Household violence and mother–child double-burden malnutrition in India <span class="pres-type">(Presentation)</span></div></li><li><div class="pres-meta">May 2024 &middot; Knoxville, Tennessee</div><div class="pres-conf">AI Summit Graduate Student Poster Session, University of Tennessee</div><div class="pres-title">A trauma-informed, text-based framework for postpartum support <span class="pres-type">(Poster)</span></div></li></ul><h4>Skills</h4><div class="chips"><span>Scientific presentation</span><span>Poster design</span><span>Abstract writing</span><span>Peer review</span></div><p class="shaped"><b>How it shaped me:</b> presenting to researchers from across the country taught me to explain years of work in a few clear minutes, and to learn from every question.</p></div></div></article>
+    </div>
+
+    <div class="folder-src" data-panel="teach" hidden>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">2025–today · University of Tennessee</div><h3>Instructor of Record, Foundations of Social Work Research</h3><p class="where">Required course in the Bachelor of Social Work program</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Redesigned assessments so each student builds a research proposal from a question in their own field placement</li>
+          <li>Restructured class sessions around structured group activities in response to student feedback</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Course design</span><span>Active learning</span><span>Assessment</span></div><p class="shaped"><b>How it shaped me:</b> students learn research best when it starts with a question they care about.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">Doctoral teaching practicum · University of Tennessee</div><h3>Teaching Assistant</h3><p class="where">School Social Work (online MSW) and the BSW Honors Integrative Seminar</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Graded assignments with specific, timely feedback and supported students in live sessions and office hours</li>
+          <li>Rated "Excellent" in every area of the end-of-semester evaluation</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Online teaching</span><span>Feedback</span><span>Trauma-informed teaching</span></div><p class="shaped"><b>How it shaped me:</b> good feedback is specific, kind, and points to the next step.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">India and the United States</div><h3>Mentor</h3><p class="where">Students and care-experienced young people</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Mentored 15 MSW students in India and 7 students in the United States, 4 of whom presented at conferences and 2 of whom entered graduate school</li>
+          <li>Mentor 47 care-experienced young people toward education and a better future</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Mentoring</span><span>Career guidance</span><span>Leadership development</span></div><p class="shaped"><b>How it shaped me:</b> a teacher who believes in a student can change what that student thinks is possible.</p></div></div></article>
+      <article class="role"><div class="role-head" role="button" tabindex="0" aria-expanded="false"><span class="role-ic" aria-hidden="true"></span><div><div class="when">Across practice settings in India</div><h3>Community Trainer</h3><p class="where">Prison staff, peer educators, project staff, families, and communities</p></div><span class="chev" aria-hidden="true">+</span></div><div class="role-body"><div><h4>Responsibilities</h4><ul>
+          <li>Trained 80 prison staff, 40 peer educators, and HIV project staff</li>
+          <li>As an MSW student, served as a resource person on drug and alcohol use prevention in a national capacity-building program for students</li>
+          <li>Taught rural families, tribal students, and communities in their own languages</li>
+        </ul><h4>Skills</h4><div class="chips"><span>Training design</span><span>Adult learning</span><span>8 Indian languages</span></div><p class="shaped"><b>How it shaped me:</b> in every role, I was also a teacher.</p></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- KURAL -->
+<section class="kural" id="kural">
+  <div class="wrap head rv">
+    <div class="kicker">The verse I carry</div>
+    <h2 class="h-l" style="margin-top:10px">Thirukkural <span class="serif">393</span></h2>
+    <p class="sub">From Valluvar's chapter on Learning (கல்வி), written about two thousand years ago.</p>
+  </div>
+  <div class="wrap">
+    <div class="fold" id="fold">
+      <div class="leaf left">
+        <p class="tamil">கண்ணுடையர் என்பவர் கற்றோர் முகத்திரண்டு<br>புண்ணுடையர் கல்லா தவர்.</p>
+        <p class="kmeta">திருக்குறள் 393 · அதிகாரம் 40, கல்வி</p>
+      </div>
+      <div class="leaf right">
+        <p class="trans">"Those who have learned are the ones who truly have eyes. The unlearned have only two wounds upon the face."</p>
+        <p class="why">My father cannot see. By Valluvar's measure, he never lacked eyes: he fought for his education, became a teacher, and opened mine. That is why I teach research. I want every student to see the people that systems overlook.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ASK ACT LEAD -->
+<section id="teaching">
+  <div class="wrap head rv">
+    <div class="kicker">Teaching</div>
+    <h2 class="h-l" style="margin-top:10px">Ask. Act. Lead.</h2>
+    <p class="sub">Most students expect research to be the course farthest from practice. I teach it as the course that helps them see their clients and communities more clearly.</p>
+  </div>
+  <div class="wrap stack">
+    <div class="scard glass"><div class="big grad">Ask</div><div><h3>Start with a real question</h3><p>Every student builds a research question from their own field placement, whether in a school, a hospital, or a child welfare office.</p></div></div>
+    <div class="scard glass"><div class="big grad">Act</div><div><h3>Answer it with evidence</h3><p>They learn design, sampling, and ethics by applying each one to a problem they care about. Who would a convenience sample leave out at your agency?</p></div></div>
+    <div class="scard glass"><div class="big grad">Lead</div><div><h3>Share it and change things</h3><p>Students take what they learn back to their peers and agencies, and every finding raises a new question.</p></div></div>
+  </div>
+  <p class="saying wrap rv">"You chose social work, but social work<br>also chose you to lead."</p>
+  <div class="wrap courses rv">
+        <h3 class="block-title">Courses</h3>
+        <div class="course-grid">
+            <article class="course glass"><div class="course-code">SOWK 410 &middot; BSW</div><h4>Foundations of Social Work Research</h4><div class="course-role">Instructor of record &middot; Fall 2025, Fall 2026</div><p>Every student builds a staged research proposal from a question in their own field placement: the Field Question Project. After fall 2025 student feedback, I rebuilt class time around group activities tied to placements and expanded office hours.</p></article>
+            <article class="course glass"><div class="course-code">SOWK 410 &middot; BSW summer section</div><h4>Foundations of Social Work Research</h4><div class="course-role">Guest lecturer &middot; Summer 2026</div><p>Guest lecture for the summer section of the same required research course.</p></article>
+            <article class="course glass"><div class="course-code">SOWK 467R &middot; BSW Honors</div><h4>Honors: Integrative Seminar</h4><div class="course-role">Graduate teaching assistant &middot; Spring 2026</div><p>Supported honors students as they connected research, practice, and their own professional growth.</p></article>
+            <article class="course glass"><div class="course-code">SOWK 535 &middot; MSW</div><h4>School Social Work</h4><div class="course-role">Graduate teaching assistant &middot; Fall 2024</div><p>Gave students detailed feedback on their work, with practical guidance for school-based practice.</p></article>
+        </div>
+        <p class="course-prep">Teaching preparation: SOWK 675 Teaching Methods in Social Work and SOWK 677 Teaching Practicum, University of Tennessee, Knoxville.</p>
+        
+    </div>
+</section>
+
+<section id="words" class="tight-top">
+  <div class="wrap head rv">
+    <div class="kicker">In others' words</div>
+    <h2 class="h-l">What colleagues <span class="serif">see.</span></h2>
+    <p class="sub">Words from faculty, supervisors, and partners will appear here soon. For now, these are the skills they describe most.</p>
+  </div>
+  <div class="wrap strengths rv">
+    <span>Individual and group counseling</span><span>Crisis and suicide-risk response</span><span>Psychoeducation and staff training</span><span>Community organizing</span><span>Case management</span><span>Program evaluation</span><span>Quantitative and qualitative research</span><span>Practice in 8 Indian languages</span>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research" class="tight-top">
+  <div class="wrap head rv">
+      <div class="kicker">Research program</div>
+      <h2 class="h-l">When caring <span class="serif">wears parents down.</span></h2>
+  </div>
+  <div class="wrap">
+      <p class="lede rv">Raising a child is demanding. When that stress lasts for months and years, some parents reach <em>burnout</em>: exhausted, distant from their children, and no longer the parent they want to be. My dissertation asks how that happens, and what could help.</p>
+      <div class="model glass rv" aria-label="Research model">
+          <div class="model-path">
+              <span class="node">Parenting demands</span><span class="arrow" aria-hidden="true"></span>
+              <span class="node">Parenting stress</span><span class="arrow" aria-hidden="true"></span>
+              <span class="node hot">Parental burnout</span>
+          </div>
+          <p class="model-note">Guided by the Balance Between Risks and Resources theory of parental burnout (Mikolajczak &amp; Roskam, 2018): burnout grows when a parent's demands outweigh their resources for too long.</p>
+      </div>
+      <div class="lab glass rv">
+          <div class="lab-tabs" role="tablist" aria-label="Dissertation papers">
+              <button role="tab" id="lab-t1" aria-controls="lab-p1" aria-selected="true">1 &middot; Evidence</button>
+              <button role="tab" id="lab-t2" aria-controls="lab-p2" aria-selected="false" tabindex="-1">2 &middot; Time</button>
+              <button role="tab" id="lab-t3" aria-controls="lab-p3" aria-selected="false" tabindex="-1">3 &middot; Context</button>
+          </div>
+          <div class="lab-panel" role="tabpanel" id="lab-p1" aria-labelledby="lab-t1">
+              <div class="lab-q">Do parenting stress and burnout go together, and which comes first?</div>
+              <dl class="lab-facts"><div><dt>Design</dt><dd>Systematic review (PRISMA 2020)</dd></div><div><dt>Evidence</dt><dd>18 reports, 17 independent samples</dd></div><div><dt>Status</dt><dd><span class="status done">Completed</span></dd></div></dl>
+              <p>Stress and burnout consistently occur together. Only a few studies test which comes first, and none follows stress that lasts for years.</p>
+          </div>
+          <div class="lab-panel" role="tabpanel" id="lab-p2" aria-labelledby="lab-t2" hidden>
+              <div class="lab-q">Does parenting stress when a child is 9 shape how parents see themselves, and how close they feel to their child, at 15?</div>
+              <dl class="lab-facts"><div><dt>Design</dt><dd>Longitudinal structural equation modeling</dd></div><div><dt>Data</dt><dd>Future of Families and Child Wellbeing Study, 3,347 caregivers</dd></div><div><dt>Status</dt><dd><span class="status">In progress</span></dd></div></dl>
+              <p>Following the same U.S. families for six years lets me ask whether earlier stress comes before later strain.</p>
+          </div>
+          <div class="lab-panel" role="tabpanel" id="lab-p3" aria-labelledby="lab-t3" hidden>
+              <div class="lab-q">Does daily caregiving time relate to burnout differently depending on the age of a parent's youngest child?</div>
+              <dl class="lab-facts"><div><dt>Design</dt><dd>Multilevel modeling</dd></div><div><dt>Data</dt><dd>International Investigation of Parental Burnout, 17,409 parents in 42 countries</dd></div><div><dt>Status</dt><dd><span class="status">In progress</span></dd></div></dl>
+              <p>Comparing parents across countries shows which parts of burnout travel across cultures and which depend on context.</p>
+          </div>
+      </div>
+      <div class="pubs glass rv">
+            <h3 class="block-title">Publications</h3>
+            <div class="pub"><span class="status done">In press</span><p>Lucio, R., Schultz, B., Ochocki, S., Stalnecker, D., <b>Srinivasan, S.</b>, Shayman, E., &amp; Alvarez, M. (in press). Implementing data-driven school social work practice: An examination of data use, needs, and integration. <em>Children &amp; Schools</em>.</p></div>
+            <div class="pub"><span class="status">Under review</span><p>Four first-authored manuscripts under peer review, on parental trauma and burnout, school social workers entering practice, a text-supported intervention for caregivers of adolescents, and childhood abuse and reproductive health care.</p></div>
+        </div>
+        <div class="profiles rv"><a class="chip glass" href="#research">ORCID</a><a class="chip glass" href="#research">Google Scholar</a><a class="chip glass" href="#research">Curriculum vitae</a><a class="chip glass" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></div>
+  </div>
+</section>
+
+<section id="gallery" class="tight-top">
+    <div class="wrap head rv">
+        <div class="kicker">On the road</div>
+        <h2 class="h-l">Conferences, classrooms, <span class="serif">and the field.</span></h2>
+        <p class="sub">Moments from presenting my research, teaching, and practice.</p>
+    </div>
+    <div class="wrap honor-wrap rv"><article class="honor glass"><div class="honor-img"><img src="images/award-2025.jpg" alt="Santhoshraj Srinivasan's Certificate of Excellence from the University of Tennessee College of Social Work" loading="lazy"></div><div class="honor-text"><div class="kicker">Recognition &middot; 2024&ndash;2025</div><h3>Certificate of Excellence</h3><p>Awarded by the PhD program in the College of Social Work, University of Tennessee, Knoxville, for excellence in service at the university and college level.</p></div></article></div>
+    <div class="flow stories photos" id="galleryflow"><figure class="story photo"><div class="img"><img src="images/sswr-2026-dc.jpg" alt="Santhoshraj Srinivasan presenting a school social work study at SSWR 2026" loading="lazy" style="object-position:center 30%"></div><figcaption class="body"><div class="cat">Washington, DC &middot; January 2026</div><h3>SSWR Annual Conference</h3><p>Presenting a qualitative study of school social work practice</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/sswr-2026-dc-son.jpg" alt="Santhoshraj Srinivasan holding his son, who points at his e-poster at SSWR 2026" loading="lazy" style="object-position:center 40%"></div><figcaption class="body"><div class="cat">Washington, DC &middot; January 2026</div><h3>A visitor at the poster</h3><p>My son joined me at SSWR as I shared the school social work study</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/cswe-2025-denver.jpg" alt="Santhoshraj Srinivasan discussing his poster with attendees at CSWE 2025 in Denver" loading="lazy" style="object-position:center 40%"></div><figcaption class="body"><div class="cat">Denver, Colorado &middot; October 2025</div><h3>CSWE 71st Annual Program Meeting</h3><p>A policy framework for trauma-informed reproductive healthcare in Indian prisons</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/cswe-2025-denver-2.jpg" alt="Attendees gathered at Santhoshraj Srinivasan's poster at CSWE 2025" loading="lazy" style="object-position:center 40%"></div><figcaption class="body"><div class="cat">Denver, Colorado &middot; October 2025</div><h3>At the poster</h3><p>Talking with attendees about the policy framework</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/award-2025-ceremony.jpg" alt="Santhoshraj Srinivasan receiving his Certificate of Excellence at the University of Tennessee" loading="lazy" style="object-position:center 30%"></div><figcaption class="body"><div class="cat">Knoxville, Tennessee &middot; May 2025</div><h3>Certificate of Excellence</h3><p>Recognized by the PhD program for excellence in service, 2024&ndash;2025</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/sswr-2025-seattle.jpg" alt="Santhoshraj Srinivasan beside his poster at SSWR 2025 in Seattle" loading="lazy" style="object-position:center 45%"></div><figcaption class="body"><div class="cat">Seattle, Washington &middot; January 2025</div><h3>SSWR Annual Conference</h3><p>A systematic review of trauma-informed care for transgender individuals in India, with J. D. Coatsworth</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/cswe-2024-kansas-city.jpg" alt="Santhoshraj Srinivasan discussing his e-poster with an attendee at CSWE 2024 in Kansas City" loading="lazy" style="object-position:center 35%"></div><figcaption class="body"><div class="cat">Kansas City, Missouri &middot; October 2024</div><h3>CSWE Annual Program Meeting</h3><p>Household violence and mother&ndash;child double-burden malnutrition in India</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/ai-summit-2024-knoxville.jpg" alt="Santhoshraj Srinivasan beside his poster on postpartum support at the University of Tennessee" loading="lazy" style="object-position:center 40%"></div><figcaption class="body"><div class="cat">Knoxville, Tennessee &middot; May 2024</div><h3>AI Summit Graduate Poster Session</h3><p>A trauma-informed, text-based framework for postpartum support</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/washington-dc.jpg" alt="Santhoshraj Srinivasan at a museum exhibit in Washington, DC" loading="lazy" style="object-position:center 25%"></div><figcaption class="body"><div class="cat">Washington, DC</div><h3>Learning from history</h3><p>At an exhibit on the fight for democracy at home and abroad</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/lincoln-memorial.jpg" alt="Santhoshraj Srinivasan at the Lincoln Memorial in Washington, DC" loading="lazy" style="object-position:center 60%"></div><figcaption class="body"><div class="cat">Washington, DC</div><h3>At the Lincoln Memorial</h3><p>A visit to the memorial during my time in the capital</p></figcaption></figure><figure class="story photo"><div class="img"><img src="images/field-india.jpg" alt="Santhoshraj Srinivasan with children during field work in a village in India" loading="lazy" style="object-position:center 30%"></div><figcaption class="body"><div class="cat">India &middot; Field work</div><h3>In the field</h3><p>With children in a village where I worked</p></figcaption></figure></div>
+    <div class="flow-ctrl"><button class="glass" aria-label="Previous" data-flow="galleryflow" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button><div class="dots" id="galleryflow-dots"></div><button class="glass" aria-label="Next" data-flow="galleryflow" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button></div>
+</section>
+
+<section id="work" class="tight-top">
+  <div class="wrap head rv">
+      <div class="kicker">Work with me</div>
+      <h2 class="h-l">Teach, speak, <span class="serif">build together.</span></h2>
+  </div>
+  <div class="wrap rgrid">
+      <div class="rcard glass rv"><div class="k">Guest lectures</div><h4>For social work classrooms</h4><p>Research methods made practical, parenting stress and burnout, and practice in multilingual communities.</p></div>
+      <div class="rcard glass rv"><div class="k">Workshops</div><h4>For practitioners and agencies</h4><p>Counseling in correctional settings, community mental health, and listening across languages and cultures.</p></div>
+      <div class="rcard glass rv"><div class="k">Collaboration</div><h4>For researchers</h4><p>Secondary data analysis, systematic reviews, and cross-national studies of families under strain.</p></div>
+  </div>
+  <p style="text-align:center;margin-top:26px"><a class="btn glass" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">Invite me on LinkedIn</a></p>
+</section>
+
+
+<!-- STORIES -->
+<section id="stories" style="padding-bottom:60px">
+  <div class="wrap head rv">
+    <div class="kicker">Weekly stories</div>
+    <h2 class="h-l" style="margin-top:10px">One story, <span class="serif">every week.</span></h2>
+    <p class="sub">Field memories, classroom moments, research in plain words, and the people who shaped me.</p>
+  </div>
+  <div class="wrap-narrow rv"><div class="soon glass"><h3>The first story is on its way.</h3><p>Until then, you can hear me tell some of these stories on the podcast.</p><p class="spotify-cta" style="margin-top:14px"><a class="btn glass" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener">Listen on Spotify</a></p></div></div>
+</section>
+
+
+<!-- PODCAST -->
+<section id="listen" style="padding-bottom:60px">
+  <div class="wrap head rv">
+    <div class="kicker">Podcast</div>
+    <h2 class="h-l">In my own <span class="serif">voice.</span></h2>
+    <p class="sub">Some stories are better heard than read. Every episode is free to hear, here or on Spotify.</p>
+  </div>
+  <div class="wrap-narrow rv"><iframe class="sp-embed" title="The Right to Ask podcast on Spotify" src="https://open.spotify.com/embed/show/077Ysa13KWvZZ9t2XHMpvS?utm_source=generator" width="100%" height="352" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+  <p class="spotify-cta"><a class="btn glass" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>Listen on Spotify</a></p>
+</section>
+
+<!-- LIFE CODE -->
+<section class="motto" id="code">
+  <div class="wrap-narrow rv">
+    <div class="kicker">The code I live by</div>
+    <p class="motto-line">I do not know what my future holds.<br><span class="serif grad">But I know my future holds something great for me.</span></p>
+        <p class="motto-second">Great opportunities come with <span class="serif">great responsibility.</span></p>
+    <p class="motto-note">I have carried these words through every move, every new language, and every uncertain year. If you are standing at the edge of something unknown, I hope you carry them too.</p>
+  </div>
+</section>
+
+<!-- FOLLOW -->
+<section class="news" id="subscribe" style="padding-top:20px">
+  <div class="wrap rv">
+    <div class="box">
+      <div style="font-size:14px;font-weight:600;opacity:.85">Follow along</div>
+      <h2 class="h-l" style="margin-top:12px">Stories, reflections,<br><span class="serif">and a podcast.</span></h2>
+      <p class="sub">Follow the podcast on Spotify for new episodes, and connect with me on LinkedIn. Weekly stories begin soon.</p>
+      <p class="news-cta"><a class="pill-btn" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener">Follow on Spotify</a> <a class="pill-btn ghost" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Santhoshraj Srinivasan · The Right to Ask</span>
+    <nav><a href="#story">Story</a><a href="#teaching">Teaching</a><a href="#research">Research</a><a href="#today">Daily</a><a href="#listen">Podcast</a><a href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></nav>
+    <p class="rights">All rights reserved. The writing, audio, photographs, and design of this site may not be copied or reproduced without written permission. To share, please link to the original page.</p>
+  </div>
+</footer>
+
+<script>
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* reveal on scroll */
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+
+/* coverflow carousels: 3D tilt + scale by distance from center, dots, arrows, drag */
+function setupFlow(id) {
+  const flow = document.getElementById(id), items = [...flow.children], dots = document.getElementById(id + '-dots');
+  items.forEach((_, i) => { const d = document.createElement('i'); d.onclick = () => go(i); dots.appendChild(d); });
+  function go(i) { const it = items[Math.max(0, Math.min(items.length - 1, i))]; flow.scrollTo({ left: it.offsetLeft - (flow.clientWidth - it.offsetWidth) / 2, behavior: 'smooth' }); }
+  function paint() {
+    const c = flow.scrollLeft + flow.clientWidth / 2; let best = 0, bd = 1e9;
+    items.forEach((it, i) => {
+      const mid = it.offsetLeft + it.offsetWidth / 2, d = (mid - c) / it.offsetWidth;
+      if (Math.abs(d) < bd) { bd = Math.abs(d); best = i; }
+      if (reduce) return;
+      const k = Math.max(-1.5, Math.min(1.5, d));
+      it.style.transform = `rotateY(${-k * 22}deg) scale(${1 - Math.min(Math.abs(k), 1) * .12})`;
+      it.style.opacity = 1 - Math.min(Math.abs(k), 1.5) * .35;
+    });
+    [...dots.children].forEach((d, i) => d.classList.toggle('on', i === best));
+    flow.dataset.cur = best;
+  }
+  flow.addEventListener('scroll', () => requestAnimationFrame(paint), { passive: true });
+  addEventListener('resize', paint); paint();
+  document.querySelectorAll(`[data-flow="${id}"]`).forEach(b => b.onclick = () => go(+flow.dataset.cur + +b.dataset.dir));
+  /* mouse drag for desktop */
+  let down = false, sx = 0, sl = 0;
+  flow.addEventListener('mousedown', e => { down = true; sx = e.pageX; sl = flow.scrollLeft; flow.style.scrollSnapType = 'none'; });
+  addEventListener('mouseup', () => { if (!down) return; down = false; flow.style.scrollSnapType = ''; go(+flow.dataset.cur); });
+  flow.addEventListener('mousemove', e => { if (down) { e.preventDefault(); flow.scrollLeft = sl - (e.pageX - sx); } });
+  setTimeout(() => go(0), 50);
+}
+setupFlow('journey'); setupFlow('folderflow'); setupFlow('galleryflow');
+/* experience folders: open sheet, role subfolders */
+(function(){
+  var wrap=document.getElementById('sheet'); if(!wrap) return;
+  var sheet=wrap.querySelector('.sheet'), body=document.getElementById('sheet-body');
+  var titleEl=document.getElementById('sheet-title'), whenEl=document.getElementById('sheet-when'), lastBtn=null;
+  function toggleRole(role){var open=!role.classList.contains('open');role.classList.toggle('open',open);role.querySelector('.role-head').setAttribute('aria-expanded',open);}
+  function openFolder(btn){
+    var key=btn.getAttribute('data-open'), src=document.querySelector('.folder-src[data-panel="'+key+'"]'); if(!src) return;
+    lastBtn=btn; body.innerHTML=src.innerHTML;
+    titleEl.textContent=btn.querySelector('.f-title').textContent; whenEl.textContent=btn.querySelector('.f-when').textContent;
+    body.scrollTop=0; wrap.hidden=false; document.body.classList.add('sheet-lock');
+    requestAnimationFrame(function(){requestAnimationFrame(function(){wrap.classList.add('open');});});
+    setTimeout(function(){var f=body.querySelector('.role-head'); if(f) f.focus();},350);
+  }
+  function close(){
+    wrap.classList.remove('open'); sheet.style.transform='';
+    setTimeout(function(){wrap.hidden=true; document.body.classList.remove('sheet-lock'); if(lastBtn) lastBtn.focus();},420);
+  }
+  document.querySelectorAll('.folder[data-open]').forEach(function(b){b.addEventListener('click',function(){openFolder(b);});});
+  wrap.addEventListener('click',function(e){
+    if(e.target.closest('[data-close]')) return close();
+    var h=e.target.closest('.role-head'); if(h) toggleRole(h.parentNode);
+  });
+  wrap.addEventListener('keydown',function(e){
+    if(e.key==='Escape') return close();
+    var h=e.target.closest&&e.target.closest('.role-head');
+    if(h&&(e.key==='Enter'||e.key===' ')){e.preventDefault();toggleRole(h.parentNode);}
+    if(e.key==='Tab'){var f=sheet.querySelectorAll('button,[tabindex="0"]'),a=f[0],z=f[f.length-1];
+      if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus();}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus();}}
+  });
+  /* drag down to close on phones */
+  var y0=null;
+  sheet.addEventListener('touchstart',function(e){if(body.scrollTop>0&&!e.target.closest('.sheet-head,.grabber'))return;y0=e.touches[0].clientY;},{passive:true});
+  sheet.addEventListener('touchmove',function(e){if(y0===null)return;var dy=e.touches[0].clientY-y0;if(dy>0)sheet.style.transform='translateY('+dy+'px)';},{passive:true});
+  sheet.addEventListener('touchend',function(e){if(y0===null)return;var dy=e.changedTouches[0].clientY-y0;y0=null;if(dy>110)close();else sheet.style.transform='';});
+})();
+
+/* segmented control */
+(function(){var seg=document.querySelector('.segment');if(!seg)return;var btns=seg.querySelectorAll('button'),thumb=seg.querySelector('.seg-thumb');
+btns.forEach(function(b,i){b.addEventListener('click',function(){btns.forEach(function(x){x.setAttribute('aria-selected',x===b)});thumb.style.transform='translateX('+(i*100)+'%)';
+document.querySelectorAll('.seg-panel').forEach(function(p){p.classList.toggle('on',p.dataset.panel===b.dataset.seg)})})})})();
+
+
+/* scroll-driven: portrait parallax and Kural fold-open */
+const portrait = document.getElementById('portrait'), fold = document.getElementById('fold');
+const leaves = fold.querySelectorAll('.leaf');
+function onScroll() {
+  if (reduce) return;
+  const y = scrollY;
+  portrait.style.transform = `translateY(${y * .12}px) scale(${1 - Math.min(y, 600) / 6000})`;
+  const r = fold.getBoundingClientRect(), vh = innerHeight;
+  const p = Math.max(0, Math.min(1, (vh - r.top) / (vh * .75)));       /* 0 = closed, 1 = open */
+  const ang = (1 - p) * 78, phone = innerWidth <= 720;
+  leaves[0].style.transform = phone ? `rotateX(${-ang}deg)` : `rotateY(${ang}deg)`;
+  leaves[1].style.transform = phone ? `rotateX(${ang}deg)` : `rotateY(${-ang}deg)`;
+  leaves.forEach(l => l.style.opacity = .25 + p * .75);
+  /* tab bar highlight */
+  let cur = 'top';
+  ['today', 'story', 'stories', 'listen'].forEach(id => { const s = document.getElementById(id); if (s && s.getBoundingClientRect().top < vh * .45) cur = id; });
+  document.querySelectorAll('.tabbar a').forEach(a => a.classList.toggle('on', a.getAttribute('href') === '#' + cur));
+}
+addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: true }); onScroll();
+
+
+</script>
+<script>
+/* ---------- Academic upgrade ---------- */
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  /* research tabs */
+  var tabs = Array.prototype.slice.call(document.querySelectorAll('.lab-tabs [role="tab"]'));
+  function sel(t, focus) {
+    tabs.forEach(function (x) {
+      var on = x === t; x.setAttribute('aria-selected', on); x.tabIndex = on ? 0 : -1;
+      var p = document.getElementById(x.getAttribute('aria-controls')); if (p) p.hidden = !on;
+    });
+    if (focus) t.focus();
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { sel(t); });
+    t.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowRight') sel(tabs[(i + 1) % tabs.length], true);
+      if (e.key === 'ArrowLeft') sel(tabs[(i - 1 + tabs.length) % tabs.length], true);
+    });
+  });
+  /* theme toggle */
+  var root = document.documentElement;
+  document.querySelectorAll('[data-theme-toggle]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var cur = root.getAttribute('data-theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('rta-theme', next); } catch (e) {}
+    });
+  });
+  /* spotlight on glass cards */
+  if (!reduce) document.querySelectorAll('.rcard,.tile,.episode,.daily-card,.lab,.model').forEach(function (el) {
+    el.classList.add('spot');
+    el.addEventListener('pointermove', function (e) {
+      var r = el.getBoundingClientRect();
+      el.style.setProperty('--mx', (e.clientX - r.left) + 'px'); el.style.setProperty('--my', (e.clientY - r.top) + 'px');
+    });
+  });
+  /* reading progress */
+  var bar = document.querySelector('.progress i'), body = document.querySelector('.gh-content');
+  if (bar && body) {
+    var upd = function () {
+      var r = body.getBoundingClientRect(), total = r.height - window.innerHeight * 0.6;
+      bar.style.transform = 'scaleX(' + Math.max(0, Math.min(1, -r.top / Math.max(total, 1))) + ')';
+    };
+    window.addEventListener('scroll', function () { requestAnimationFrame(upd); }, { passive: true }); upd();
+  }
+  /* table of contents for long stories */
+  if (body) {
+    var hs = body.querySelectorAll('h2');
+    if (hs.length >= 3) {
+      var nav = document.createElement('nav'); nav.className = 'toc glass'; nav.setAttribute('aria-label', 'On this page');
+      var ol = document.createElement('ol');
+      Array.prototype.forEach.call(hs, function (h, i) {
+        if (!h.id) h.id = 'section-' + (i + 1);
+        var li = document.createElement('li'), a = document.createElement('a');
+        a.href = '#' + h.id; a.textContent = h.textContent; li.appendChild(a); ol.appendChild(li);
+      });
+      var t = document.createElement('h4'); t.textContent = 'On this page';
+      nav.appendChild(t); nav.appendChild(ol); body.insertBefore(nav, body.firstChild);
+    }
+  }
+  /* copy citation */
+  document.querySelectorAll('[data-cite]').forEach(function (b) {
+    b.addEventListener('click', function () {
+      var el = document.getElementById(b.getAttribute('data-cite')); if (!el) return;
+      var text = el.textContent.replace(/\s+/g, ' ').trim();
+      var done = function () { b.textContent = 'Citation copied'; setTimeout(function () { b.textContent = 'Copy APA citation'; }, 2000); };
+      var fallback = function () { var r = document.createRange(); r.selectNodeContents(el); var s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected. Press Copy.'; };
+      if (navigator.clipboard) navigator.clipboard.writeText(text).then(done, fallback); else fallback();
+    });
+  });
+})();
+</script>
+<script>
+
+/* ---------- App mode (phones) ---------- */
+(function () {
+  var mq = window.matchMedia('(max-width: 720px)');
+  var title = document.querySelector('.nav-title');
+  var secs = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
+  var lastY = window.scrollY;
+  function label(sec) {
+    var k = sec.querySelector('.kicker');
+    return k ? k.textContent.split('·')[0].trim() : '';
+  }
+  function tick() {
+    if (!mq.matches) { document.body.classList.remove('compact'); return; }
+    var y = window.scrollY;
+    document.body.classList.toggle('compact', y > 140);
+    if (title) {
+      var cur = '';
+      secs.forEach(function (s) { if (s.getBoundingClientRect().top < 120) cur = label(s) || cur; });
+      var page = document.querySelector('.article-title, .listing h1');
+      if (!cur && page) cur = page.textContent;
+      if (title.textContent !== cur) title.textContent = cur || document.title;
+    }
+    /* tuck the mini player away while scrolling down, bring it back on the way up */
+    if (Math.abs(y - lastY) > 8) { document.body.classList.toggle('hide-mini', y > lastY && y > 400); lastY = y; }
+  }
+  window.addEventListener('scroll', function () { requestAnimationFrame(tick); }, { passive: true });
+  if (mq.addEventListener) mq.addEventListener('change', tick);
+  tick();
+  /* hide the mini player while a folder sheet is open */
+  var sheet = document.querySelector('.sheet-wrap');
+  if (sheet && window.MutationObserver) new MutationObserver(function () {
+    document.body.classList.toggle('sheet-open', sheet.classList.contains('open') || sheet.getAttribute('aria-hidden') === 'false');
+  }).observe(sheet, { attributes: true });
+})();
+</script>
+</body>
+</html>
