@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://santhoshrajsrinivasan.github.io/sitemap.xml
+Sitemap: https://santhoshrajsrinivasan.com/sitemap.xml
