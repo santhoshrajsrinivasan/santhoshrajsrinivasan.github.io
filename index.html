@@ -401,37 +401,42 @@ footer .rights{display:block;width:100%;font-size:12.5px;color:var(--muted);marg
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.primary,:root:not([data-theme="light"]) .reacts button.on{color:#16173a}}
 :root[data-theme="dark"] .btn.primary,:root[data-theme="dark"] .reacts button.on{color:#16173a}
 /* ---------- Places map ---------- */
-#places .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:start}
-#places .mapcard{position:sticky;top:90px;border-radius:30px;padding:18px;background:var(--bg-2);border:1px solid var(--hair);box-shadow:var(--glass-shadow)}
-#places svg{display:block;width:100%;height:auto}
-#places .sea{font-family:var(--serif);font-style:italic;font-size:13px;fill:var(--muted);opacity:.8}
-#places .region{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;fill:var(--muted);opacity:.75}
-#places .gridd{fill:var(--hair)}
-#places .route{fill:none;stroke:var(--accent);stroke-width:1.6;stroke-dasharray:4 5;opacity:.55}
-#places .sat{fill:var(--accent);opacity:.45}
-#places .pin{cursor:pointer}
-#places .pin circle{fill:var(--accent);stroke:var(--bg-2);stroke-width:2.5;transition:fill .3s,r .3s}
-#places .pin text{fill:#fff;font-size:11px;font-weight:700;text-anchor:middle;dominant-baseline:central;pointer-events:none}
-#places .pin.on circle{fill:var(--orange);r:14}
-#places .map-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:6px}
-#places ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
-#places li{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:18px 20px;border-radius:22px;background:var(--bg-2);border:1px solid var(--hair);cursor:pointer;transition:border-color .3s,box-shadow .3s,transform .3s var(--ease)}
-#places li.on{border-color:color-mix(in srgb,var(--orange) 55%,transparent);box-shadow:0 14px 34px -18px rgba(245,120,42,.45);transform:translateX(4px)}
-#places li .n{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center;transition:background .3s}
-#places li.on .n{background:var(--orange)}
-#places li .when{font-size:12.5px;font-weight:600;color:var(--warm)}
-#places li h3{font-size:17px;font-weight:700;letter-spacing:-.02em;margin:3px 0 2px;color:var(--ink)}
-#places li .prole{font-size:14px;font-weight:600;color:var(--ink-2)}
-#places li p{font-size:14px;color:var(--muted);line-height:1.5;margin-top:6px}
-#places li .tag{display:inline-block;margin-top:8px;font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px;color:var(--accent-2);background:color-mix(in srgb,var(--accent-2) 13%,transparent)}
-#places li.now .n{background:var(--warm)}
-#places li.extra .n{background:transparent;color:var(--accent);border:2px solid var(--accent)}
-#places .ring{fill:var(--bg-2);stroke:var(--accent);stroke-width:2}
-#places .plab{font-size:10.5px;font-weight:600;fill:var(--ink-2)}
-#places .vid{fill:var(--accent);opacity:.06}
-@media (max-width:860px){#places .grid{grid-template-columns:1fr;gap:22px}#places .mapcard{position:relative;top:0;max-width:460px;margin:0 auto;width:100%}}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) #places .pin text,:root:not([data-theme="light"]) #places li .n{color:#16173a;fill:#16173a}}
-:root[data-theme="dark"] #places .pin text,:root[data-theme="dark"] #places li .n{color:#16173a;fill:#16173a}
+.pmap .grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:40px;align-items:start}
+.pmap .mapcard{position:sticky;top:90px;border-radius:30px;padding:18px;background:var(--bg-2);border:1px solid var(--hair);box-shadow:var(--glass-shadow)}
+.pmap svg{display:block;width:100%;height:auto}
+.pmap .sea{font-family:var(--serif);font-style:italic;font-size:13px;fill:var(--muted);opacity:.8}
+.pmap .region{font-size:10.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;fill:var(--muted);opacity:.75}
+.pmap .gridd{fill:var(--hair)}
+.pmap .route{fill:none;stroke:var(--accent);stroke-width:1.6;stroke-dasharray:4 5;opacity:.55}
+.pmap .sat{fill:var(--accent);opacity:.45}
+.pmap .pin{cursor:pointer}
+.pmap .pin circle{fill:var(--accent);stroke:var(--bg-2);stroke-width:2.5;transition:fill .3s,r .3s}
+.pmap .pin text{fill:#fff;font-size:11px;font-weight:700;text-anchor:middle;dominant-baseline:central;pointer-events:none}
+.pmap .pin.on circle{fill:var(--orange);r:14}
+.pmap .map-note{font-size:12.5px;color:var(--muted);text-align:center;margin-top:6px}
+.pmap ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.pmap li{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:18px 20px;border-radius:22px;background:var(--bg-2);border:1px solid var(--hair);cursor:pointer;transition:border-color .3s,box-shadow .3s,transform .3s var(--ease)}
+.pmap li.on{border-color:color-mix(in srgb,var(--orange) 55%,transparent);box-shadow:0 14px 34px -18px rgba(245,120,42,.45);transform:translateX(4px)}
+.pmap li .n{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:13px;font-weight:700;display:grid;place-items:center;transition:background .3s}
+.pmap li.on .n{background:var(--orange)}
+.pmap li .when{font-size:12.5px;font-weight:600;color:var(--warm)}
+.pmap li h3{font-size:17px;font-weight:700;letter-spacing:-.02em;margin:3px 0 2px;color:var(--ink)}
+.pmap li .prole{font-size:14px;font-weight:600;color:var(--ink-2)}
+.pmap li p{font-size:14px;color:var(--muted);line-height:1.5;margin-top:6px}
+.pmap li .tag{display:inline-block;margin-top:8px;font-size:11.5px;font-weight:600;padding:3px 10px;border-radius:999px;color:var(--accent-2);background:color-mix(in srgb,var(--accent-2) 13%,transparent)}
+.pmap li.now .n{background:var(--warm)}
+.pmap li.extra .n{background:transparent;color:var(--accent);border:2px solid var(--accent)}
+.pmap .ring{fill:var(--bg-2);stroke:var(--accent);stroke-width:2}
+.pmap .plab{font-size:10.5px;font-weight:600;fill:var(--ink-2)}
+.pmap .vid{fill:var(--accent);opacity:.06}
+@media (max-width:860px){.pmap .grid{grid-template-columns:1fr;gap:22px}.pmap .mapcard{position:relative;top:0;max-width:460px;margin:0 auto;width:100%}}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .pmap .pin text,:root:not([data-theme="light"]) .pmap li .n{color:#16173a;fill:#16173a}}
+:root[data-theme="dark"] .pmap .pin text,:root[data-theme="dark"] .pmap li .n{color:#16173a;fill:#16173a}
+.pmap .city{font-size:12px;font-weight:700;fill:var(--ink)}
+.pmap li .talk{margin-top:8px;padding-top:8px;border-top:1px solid var(--hair)}
+.pmap li .prole+.talk{border-top:0;padding-top:0;margin-top:10px}
+.pmap li .talk b{display:block;font-size:14px;font-weight:600;color:var(--ink-2);line-height:1.4}
+.pmap li .talk span{display:block;font-size:12.5px;color:var(--muted);margin-top:2px}
 /* ---------- Membership ---------- */
 .lock-badge{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);vertical-align:1px}
 .news-cta{margin-top:30px}
@@ -696,7 +701,7 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   </div>
 </section>
 
-<section id="places" class="tight-top">
+<section id="places" class="tight-top pmap">
   <div class="wrap head rv">
     <div class="kicker">Where the work has taken me</div>
     <h2 class="h-l" style="margin-top:10px">Forests, coasts, prisons, <span class="serif">and cities.</span></h2>
@@ -915,6 +920,20 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
             <div class="pub"><span class="status">Under review</span><p>Four first-authored manuscripts under peer review, on parental trauma and burnout, school social workers entering practice, a text-supported intervention for caregivers of adolescents, and childhood abuse and reproductive health care.</p></div>
         </div>
         <div class="profiles rv"><a class="chip glass" href="#research">ORCID</a><a class="chip glass" href="#research">Google Scholar</a><a class="chip glass" href="#research">Curriculum vitae</a><a class="chip glass" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></div>
+  </div>
+</section>
+
+<section id="talks" class="tight-top pmap">
+  <div class="wrap head rv">
+    <div class="kicker">Presenting across the United States</div>
+    <h2 class="h-l" style="margin-top:10px">Six cities. <span class="serif">Eight presentations.</span></h2>
+    <p class="sub">From my first poster in Knoxville to my latest in Atlanta, I have carried my research to national social work conferences across the country.</p>
+  </div>
+  <div class="wrap grid">
+    <div class="mapcard rv"><svg id="talksmap" viewBox="0 0 420 275" role="img" aria-label="Map of the United States cities where Santhoshraj Srinivasan has presented, numbered in order"></svg><div class="map-note">Tap a number to see what I presented there.</div></div>
+    <ol class="rv" id="talkslist">
+      <li data-i="1"><span class="n">1</span><div><div class="when">May 2024</div><h3>Knoxville, Tennessee</h3><div class="prole">AI Summit Graduate Student Poster Session, University of Tennessee</div><div class="talk"><b>A trauma-informed, text-based framework for postpartum support <em style="font-weight:500;color:var(--muted)">(Poster)</em></b><span><strong>Santhoshraj Srinivasan</strong></span></div></div></li><li data-i="2"><span class="n">2</span><div><div class="when">October 2024</div><h3>Kansas City, Missouri</h3><div class="prole">Council on Social Work Education Annual Program Meeting</div><div class="talk"><b>Household violence and mother&ndash;child double-burden malnutrition in India <em style="font-weight:500;color:var(--muted)">(Poster)</em></b><span>Dr. Lisa Zottarelli (lead author), <strong>Santhoshraj Srinivasan</strong>, and Dr. Thankam Sunil</span></div></div></li><li data-i="3"><span class="n">3</span><div><div class="when">January 2025</div><h3>Seattle, Washington</h3><div class="prole">Society for Social Work and Research Annual Conference</div><div class="talk"><b>Trauma-informed care for transgender individuals in India: A systematic review <em style="font-weight:500;color:var(--muted)">(Presentation)</em></b><span><strong>Santhoshraj Srinivasan</strong> and Dr. J. D. Coatsworth</span></div></div></li><li data-i="4"><span class="n">4</span><div><div class="when">October 2025</div><h3>Denver, Colorado</h3><div class="prole">Council on Social Work Education Annual Program Meeting</div><div class="talk"><b>Advancing trauma-informed reproductive healthcare in Indian prisons <em style="font-weight:500;color:var(--muted)">(Presentation)</em></b><span><strong>Santhoshraj Srinivasan</strong></span></div></div></li><li data-i="5"><span class="n">5</span><div><div class="when">January 2026</div><h3>Washington, DC</h3><div class="prole">Society for Social Work and Research Annual Conference</div><div class="talk"><b>Toward a trauma-informed prison system in India <em style="font-weight:500;color:var(--muted)">(Poster)</em></b><span><strong>Santhoshraj Srinivasan</strong></span></div><div class="talk"><b>School social work roles, consultation, competencies, and systemic challenges <em style="font-weight:500;color:var(--muted)">(Poster)</em></b><span>Dr. Robert Lucio (lead author) and <strong>Santhoshraj Srinivasan</strong></span></div></div></li><li data-i="6"><span class="n">6</span><div><div class="when">October 2026</div><h3>Atlanta, Georgia</h3><div class="prole">Council on Social Work Education Annual Program Meeting</div><div class="talk"><b>A relational model of parental trauma, burnout, and adolescent risk <em style="font-weight:500;color:var(--muted)">(Poster)</em></b><span><strong>Santhoshraj Srinivasan</strong></span></div><div class="talk"><b>Parental burnout: A systematic review of the role of parental stress chronicity and temporal relationships <em style="font-weight:500;color:var(--muted)">(Poster)</em></b><span><strong>Santhoshraj Srinivasan</strong></span></div></div></li>
+    </ol>
   </div>
 </section>
 
@@ -1232,6 +1251,31 @@ addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: tru
   function on(i,scroll){list.forEach(function(l,j){l.classList.toggle('on',j===i)});pins.forEach(function(g,j){g.classList.toggle('on',j===i)});
     if(scroll&&list[i]&&window.innerWidth>860)list[i].scrollIntoView({behavior:'smooth',block:'nearest'});
     else if(scroll&&list[i])list[i].scrollIntoView({behavior:'smooth',block:'center'});}
+  list.forEach(function(l,i){l.addEventListener('mouseenter',function(){on(i,false)});l.addEventListener('click',function(){on(i,false)})});
+})();
+
+/* ---------- Talks map ---------- */
+(function(){
+  var svg=document.getElementById('talksmap'); if(!svg) return;
+  var NS='http://www.w3.org/2000/svg';
+  function X(lon){return (lon+125)*7.9+16} function Y(lat){return (49-lat)*13+24}
+  function el(t,a,txt){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt)e.textContent=txt;svg.appendChild(e);return e}
+  for(var gx=20;gx<=410;gx+=20)for(var gy=20;gy<=260;gy+=20)el('circle',{cx:gx,cy:gy,r:1.1,'class':'gridd'});
+  el('text',{x:22,y:250,'class':'sea'},'Pacific Ocean'); el('text',{x:405,y:264,'class':'sea','text-anchor':'end'},'Atlantic Ocean');
+  var P=[[-83.92,35.96,'Knoxville',13,4,'start'],[-94.58,39.10,'Kansas City',0,26,'middle'],[-122.33,47.61,'Seattle',15,4,'start'],[-104.99,39.74,'Denver',-15,4,'end'],[-77.04,38.91,'Washington, DC',-15,-12,'end'],[-84.39,33.75,'Atlanta',15,6,'start']];
+  var d='M'+X(P[0][0])+' '+Y(P[0][1]);
+  for(var k=1;k<P.length;k++){var x0=X(P[k-1][0]),y0=Y(P[k-1][1]),x1=X(P[k][0]),y1=Y(P[k][1]);var mx=(x0+x1)/2,my=(y0+y1)/2-Math.min(60,Math.hypot(x1-x0,y1-y0)*.22);d+=' Q'+mx.toFixed(1)+' '+my.toFixed(1)+' '+x1.toFixed(1)+' '+y1.toFixed(1)}
+  el('path',{d:d,'class':'route'});
+  P.forEach(function(p){el('text',{x:X(p[0])+p[3],y:Y(p[1])+p[4],'class':'city','text-anchor':p[5]},p[2])});
+  var list=document.querySelectorAll('#talkslist li'), pins=[];
+  P.forEach(function(p,i){var g=document.createElementNS(NS,'g');g.setAttribute('class','pin');g.setAttribute('tabindex','0');g.setAttribute('role','button');g.setAttribute('aria-label',p[2]);
+    var c=document.createElementNS(NS,'circle');c.setAttribute('cx',X(p[0]));c.setAttribute('cy',Y(p[1]));c.setAttribute('r',10);
+    var t=document.createElementNS(NS,'text');t.setAttribute('x',X(p[0]));t.setAttribute('y',Y(p[1])+.5);t.textContent=i+1;
+    g.appendChild(c);g.appendChild(t);svg.appendChild(g);pins.push(g);
+    function go(){on(i,true)} g.addEventListener('click',go); g.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}});
+  });
+  function on(i,scroll){list.forEach(function(l,j){l.classList.toggle('on',j===i)});pins.forEach(function(g,j){g.classList.toggle('on',j===i)});
+    if(scroll&&list[i])list[i].scrollIntoView({behavior:'smooth',block:window.innerWidth>860?'nearest':'center'});}
   list.forEach(function(l,i){l.addEventListener('mouseenter',function(){on(i,false)});l.addEventListener('click',function(){on(i,false)})});
 })();
 </script>
