@@ -703,12 +703,13 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
 <header class="nav glass">
   <a href="#top" class="brand"><b>R</b>The Right to Ask</a>
   <span class="nav-title" aria-hidden="true"></span>
-  <a class="l" href="#story">Story</a>
-  <a class="l" href="#kural">Kural</a>
+  <a class="l" href="#research">Research</a>
   <a class="l" href="#teaching">Teaching</a>
-  <a class="l" href="#today">Daily</a>
+  <a class="l" href="#roles">Experience</a>
+  <a class="l" href="#talks">Presentations</a>
+  <a class="l" href="#story">Story</a>
   <a class="l" href="#listen">Podcast</a>
-  <a class="l" href="#stories">Weekly</a>
+  <a class="l" href="#contact">Contact</a>
   <a href="#subscribe" class="pill-btn">Follow</a>
 </header>
 
@@ -719,10 +720,10 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
 </a>
 <nav class="tabbar glass" aria-label="Sections">
   <a href="#top" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M3 11 12 4l9 7v9H5z"/></svg>Home</a>
+  <a href="#research"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Research</a>
   <a href="#story"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 5h7v15H4zM13 5h7v15h-7z"/></svg>Story</a>
-  <a href="#today"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5 19 19M5 19l1.5-1.5M17.5 6.5 19 5"/></svg>Daily</a>
   <a href="#listen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg>Listen</a>
-  <a href="#stories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg>Weekly</a>
+  <a href="#contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></svg>Contact</a>
 </nav>
 
 <!-- HERO -->
@@ -745,7 +746,6 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   </div>
 </section>
 
-<!-- STATS -->
 <div class="wrap">
   <div class="rail">
     <div class="tile glass rv"><b class="grad">8</b><span>Indian languages I can work in professionally, across six states</span></div>
@@ -756,50 +756,105 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   </div>
 </div>
 
-<!-- JOURNEY -->
-<section id="today" class="tight-top" style="padding-bottom:30px">
-  <div class="wrap-narrow">
-    <a class="daily-card glass rv" href="#today">
-      <div class="kicker">Today's reflection</div>
-      <h3>Learn the language before you try to help.</h3>
-      <p>A short reflection from my years in the field. New reflections will appear here.</p>
-      <span class="daily-link">Read and reflect &rarr;</span>
-    </a>
+<section id="research" class="tight-top">
+  <div class="wrap head rv">
+      <div class="kicker">Research program</div>
+      <h2 class="h-l">When caring <span class="serif">wears parents down.</span></h2>
+  </div>
+  <div class="wrap">
+      <p class="lede rv">Raising a child is demanding. When that stress lasts for months and years, some parents reach <em>burnout</em>: exhausted, distant from their children, and no longer the parent they want to be. My dissertation asks how that happens, and what could help.</p>
+      <div class="model glass rv" aria-label="Research model">
+          <div class="model-path">
+              <span class="node">Parenting demands</span><span class="arrow" aria-hidden="true"></span>
+              <span class="node">Parenting stress</span><span class="arrow" aria-hidden="true"></span>
+              <span class="node hot">Parental burnout</span>
+          </div>
+          <p class="model-note">Guided by the Balance Between Risks and Resources theory of parental burnout (Mikolajczak &amp; Roskam, 2018): burnout grows when a parent's demands outweigh their resources for too long.</p>
       </div>
+      <div class="lab glass rv">
+          <div class="lab-tabs" role="tablist" aria-label="Dissertation papers">
+              <button role="tab" id="lab-t1" aria-controls="lab-p1" aria-selected="true">1 &middot; Evidence</button>
+              <button role="tab" id="lab-t2" aria-controls="lab-p2" aria-selected="false" tabindex="-1">2 &middot; Time</button>
+              <button role="tab" id="lab-t3" aria-controls="lab-p3" aria-selected="false" tabindex="-1">3 &middot; Context</button>
+          </div>
+          <div class="lab-panel" role="tabpanel" id="lab-p1" aria-labelledby="lab-t1">
+              <div class="lab-q">Do parenting stress and burnout go together, and which comes first?</div>
+              <dl class="lab-facts"><div><dt>Design</dt><dd>Systematic review (PRISMA 2020)</dd></div><div><dt>Evidence</dt><dd>18 reports, 17 independent samples</dd></div><div><dt>Status</dt><dd><span class="status done">Completed</span></dd></div></dl>
+              <p>Stress and burnout consistently occur together. Only a few studies test which comes first, and none follows stress that lasts for years.</p>
+          </div>
+          <div class="lab-panel" role="tabpanel" id="lab-p2" aria-labelledby="lab-t2" hidden>
+              <div class="lab-q">Does parenting stress when a child is 9 shape how parents see themselves, and how close they feel to their child, at 15?</div>
+              <dl class="lab-facts"><div><dt>Design</dt><dd>Longitudinal structural equation modeling</dd></div><div><dt>Data</dt><dd>Future of Families and Child Wellbeing Study, 3,347 caregivers</dd></div><div><dt>Status</dt><dd><span class="status">In progress</span></dd></div></dl>
+              <p>Following the same U.S. families for six years lets me ask whether earlier stress comes before later strain.</p>
+          </div>
+          <div class="lab-panel" role="tabpanel" id="lab-p3" aria-labelledby="lab-t3" hidden>
+              <div class="lab-q">Does daily caregiving time relate to burnout differently depending on the age of a parent's youngest child?</div>
+              <dl class="lab-facts"><div><dt>Design</dt><dd>Multilevel modeling</dd></div><div><dt>Data</dt><dd>International Investigation of Parental Burnout, 17,409 parents in 42 countries</dd></div><div><dt>Status</dt><dd><span class="status">In progress</span></dd></div></dl>
+              <p>Comparing parents across countries shows which parts of burnout travel across cultures and which depend on context.</p>
+          </div>
+      </div>
+      <div class="pubs glass rv">
+            <h3 class="block-title">Publications</h3>
+            <div class="pub"><span class="status done">In press</span><p>Lucio, R., Schultz, B., Ochocki, S., Stalnecker, D., <b>Srinivasan, S.</b>, Shayman, E., &amp; Alvarez, M. (in press). Implementing data-driven school social work practice: An examination of data use, needs, and integration. <em>Children &amp; Schools</em>.</p></div>
+            <div class="pub"><span class="status">Under review</span><p><b>Srinivasan, S.</b>, &amp; Mathew, A. R. Childhood abuse, pelvic pain between periods, and reproductive healthcare utilization: A cross-sectional study in the United States. <em>Sexual &amp; Reproductive Healthcare</em>.</p></div><div class="pub"><span class="status">Under review</span><p><b>Srinivasan, S.</b>, Lucio, R., &amp; Brand, N. Organizational support for school social workers entering practice: A qualitative cross-case analysis. <em>Child and Adolescent Social Work Journal</em>.</p></div><div class="pub"><span class="status">Under review</span><p><b>Srinivasan, S.</b>, &amp; Mathew, A. R. Parenting under sustained stress: A conceptual framework for a text-supported intervention with caregivers of adolescents. <em>Child and Adolescent Social Work Journal</em>.</p></div><div class="pub"><span class="status">In progress</span><p>Several additional manuscripts are in revision or in preparation, on parental trauma and burnout, families affected by incarceration, and trauma-informed systems of care.</p></div>
+        </div>
+        <div class="profiles rv"><a class="chip glass" href="https://orcid.org/0009-0005-2855-1132" target="_blank" rel="noopener">ORCID</a><a class="chip glass" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></div>
+  </div>
 </section>
 
-<section id="story">
+<section id="agenda" class="tight-top">
   <div class="wrap head rv">
-    <div class="kicker">My story</div>
-    <h2 class="h-l" style="margin-top:10px">Five chapters. <span class="serif">One question.</span></h2>
-    <p class="sub">Swipe through the places that made me. Wherever I worked, I learned the local language before I tried to help.</p>
+    <div class="kicker">My research at a glance</div>
+    <h2 class="h-l" style="margin-top:10px">One question, <span class="serif">many settings.</span></h2>
+    <p class="sub">How do stress and trauma move through families and systems, and what helps people recover?</p>
   </div>
-  <div class="flow" id="journey">
-    <article class="chapter c1"><span class="num">1</span><div class="yr">Childhood · Tamil Nadu</div><div><h3>My father's classroom</h3><p>English and higher education were out of reach for most families in my village. My father is blind, and he fought for his own education until he became a teacher. He taught me that education is something we reach for and hold on to.</p></div></article>
-    <article class="chapter c2"><span class="num">2</span><div class="yr">2017–2019 · MSW field work</div><div><h3>Learning social work in the field</h3><p>From a sanitation program in remote villages to psychiatric hospitals, to Adivasi communities affected by tuberculosis and HIV in the Nilgiris, and to families of people with serious mental illness in Kolkata.</p></div></article>
-    <article class="chapter c3"><span class="num">3</span><div class="yr">2019–2021 · Research and recovery</div><div><h3>Counting the families others miss</h3><p>As a field researcher, I helped gather data across 100 villages and reached households missing from official lists. As a rural mental health program coordinator, I worked alongside women living with serious mental illness and their families, in their own language.</p></div></article>
-    <article class="chapter c4"><span class="num">4</span><div class="yr">2021–2023 · Kerala and Tamil Nadu</div><div><h3>Prisons, HIV programs, and young people in care</h3><p>I counseled people in seven prisons, led evaluations of HIV prevention programs for the National AIDS Control Organization, and mentored adolescents in a residential care program, where we built a library together.</p></div></article>
-    <article class="chapter c5"><span class="num">5</span><div class="yr">2023–today · Knoxville, Tennessee</div><div><h3>Research and teaching</h3><p>As a PhD student at the University of Tennessee, I study parenting stress and parental burnout, and I teach Foundations of Social Work Research as instructor of record.</p></div></article>
+  <div class="wrap rv">
+    <div class="pillars">
+      <article class="pillar p1"><span class="pn">1</span><h3>Parental stress and burnout</h3><p>How long-term parenting stress becomes burnout, and what that means for children.</p></article>
+      <article class="pillar p2"><span class="pn">2</span><h3>Trauma-informed systems</h3><p>Prisons, reproductive and maternal health, schools, and care settings for young people.</p></article>
+      <article class="pillar p3"><span class="pn">3</span><h3>Health equity for marginalized communities</h3><p>Transgender people, people living with HIV, tribal and rural communities, people with serious mental illness, and communities facing disasters and environmental change.</p></article>
+    </div>
   </div>
-  <div class="flow-ctrl">
-    <button class="glass" aria-label="Previous" data-flow="journey" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button>
-    <div class="dots" id="journey-dots"></div>
-    <button class="glass" aria-label="Next" data-flow="journey" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button>
+  <div class="wrap rv">
+    <div class="matrix glass" role="table" aria-label="Research matrix: populations by methods">
+      <div class="mx-legend"><span><i class="done">●</i> Research done</span><span><i class="prac">◐</i> Practice experience</span><span><i class="next">○</i> Ready to study</span></div>
+      <div class="mx-row mx-head"><div class="mx-pop"></div><div class="mx-cell"><span>Practice</span></div><div class="mx-cell"><span>Reviews</span></div><div class="mx-cell"><span>Survey data analysis</span></div><div class="mx-cell"><span>Qualitative</span></div><div class="mx-cell"><span>Program evaluation</span></div><div class="mx-cell"><span>Policy analysis</span></div><div class="mx-cell"><span>Models and frameworks</span></div><div class="mx-cell"><span>Field data collection</span></div></div><div class="mx-row"><div class="mx-pop"><b>Parents and families</b><small>Systematic review, Fragile Families longitudinal study, 42-country burnout data</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell has done" data-label="Reviews" title="Reviews: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has done" data-label="Survey data analysis" title="Survey data analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Policy analysis" title="Policy analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Models and frameworks" title="Models and frameworks: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Incarcerated people and prison systems</b><small>Correctional counseling; prison mental health review; reproductive healthcare policy framework</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell has done" data-label="Reviews" title="Reviews: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has next" data-label="Program evaluation" title="Program evaluation: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Policy analysis" title="Policy analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Women&rsquo;s reproductive and maternal health</b><small>Mother&ndash;child malnutrition analysis; postpartum support framework; prison reproductive healthcare</small></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Reviews" title="Reviews: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Survey data analysis" title="Survey data analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Policy analysis" title="Policy analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has done" data-label="Models and frameworks" title="Models and frameworks: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Transgender people</b><small>Systematic review of trauma-informed care in India</small></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Reviews" title="Reviews: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Policy analysis" title="Policy analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Adolescents and care-experienced young people</b><small>Residential care practice; relational model of parental trauma and adolescent risk; caregiver intervention</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Survey data analysis" title="Survey data analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Models and frameworks" title="Models and frameworks: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>People with serious mental illness and their families</b><small>Rural mental health program; psychiatric social work placements</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has next" data-label="Program evaluation" title="Program evaluation: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>People living with HIV</b><small>HIV prevention program evaluations for NACO</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Program evaluation" title="Program evaluation: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Models and frameworks" title="Models and frameworks: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Tribal and rural communities</b><small>Data collection across 100 villages; tribal field work in Melghat and the Nilgiris&ndash;Wayanad region</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Field data collection" title="Field data collection: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div></div><div class="mx-row"><div class="mx-pop"><b>Schools and school social workers</b><small>Qualitative study of school social work practice; data-driven practice article</small></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Survey data analysis" title="Survey data analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has done" data-label="Qualitative" title="Qualitative: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Policy analysis" title="Policy analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Communities facing disasters and environmental change</b><small>Social and environmental impact assessment of a solar energy project</small></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Survey data analysis" title="Survey data analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Program evaluation" title="Program evaluation: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div></div>
+    </div>
+  </div>
+
+  <div class="wrap rv">
+    <div class="agenda-sub"><div class="kicker">Where my research goes next</div><h3>Bridging burnout research to the communities I have served</h3></div>
+    <div class="next-grid"><article class="next-card glass"><span class="nn">1</span><h4>Parental burnout among incarcerated parents and their families</h4><p>Builds on: Burnout research, correctional counseling, and two prison reviews</p></article><article class="next-card glass"><span class="nn">2</span><h4>Caregiver burnout in families of people with serious mental illness</h4><p>Builds on: Burnout research and rural mental health practice</p></article><article class="next-card glass"><span class="nn">3</span><h4>Parenting stress among parents living with HIV</h4><p>Builds on: Burnout research and HIV program evaluations</p></article><article class="next-card glass"><span class="nn">4</span><h4>Care-experienced young people as future parents</h4><p>Builds on: Relational model of parental trauma and residential care practice</p></article><article class="next-card glass"><span class="nn">5</span><h4>Family acceptance and well-being of transgender people in India</h4><p>Builds on: Transgender care review and family stress research</p></article><article class="next-card glass ai"><span class="nn">6</span><h4>AI-assisted, trauma-informed text support for overwhelmed caregivers</h4><p>Builds on: postpartum text-support framework, caregiver text intervention, and burnout research</p></article><article class="next-card glass env"><span class="nn">7</span><h4>Family stress and recovery after floods, cyclones, and extreme heat</h4><p>Builds on: burnout research, environmental impact assessment, and coastal community practice</p></article></div>
+  </div>
+  <div class="wrap rv">
+    <div class="agenda-sub"><div class="kicker">How I fit in a school of social work</div><h3>Ready to contribute to research, teaching, and partnerships</h3></div>
+    <div class="fit-grid"><article class="fit-card ai-fit"><div class="ai-badge">Future-facing</div><h4>AI and digital social work</h4><p>Safe, ethical, and trauma-informed use of AI and text-based tools: digital supports that reach caregivers between visits, early warning of rising stress from daily check-ins, and preparing students to use AI with clients&rsquo; dignity and privacy at the center.</p><div class="teach"><span>Can teach</span>Technology and AI in Social Work Practice &middot; Social Work Ethics &middot; Research Methods with AI tools</div></article><article class="fit-card ai-fit env-fit"><div class="ai-badge">Growing field</div><h4>Environmental and disaster social work</h4><p>How floods, cyclones, and heat strain families already under stress, and what helps them recover. Environmental justice for rural, tribal, and coastal communities, and trauma-informed crisis response.</p><div class="teach"><span>Can teach</span>Disaster and Crisis Response &middot; Environmental Justice &middot; Global Social Work</div></article><article class="fit-card glass"><h4>Child, youth, and family well-being</h4><p>Parenting stress, parental burnout, and adolescent well-being, including families involved with child welfare.</p><div class="teach"><span>Can teach</span>Practice with Children, Adolescents, and Families · Human Behavior in the Social Environment</div></article><article class="fit-card glass"><h4>Youth and the justice system</h4><p>Adolescent risk, parental trauma, and families affected by incarceration, with seven prisons of practice experience.</p><div class="teach"><span>Can teach</span>Correctional and Forensic Social Work · Trauma-Informed Practice</div></article><article class="fit-card glass"><h4>Mental and behavioral health</h4><p>Caregiver mental health, serious mental illness, parental alcohol use, and trauma across the life course.</p><div class="teach"><span>Can teach</span>Mental and Behavioral Health Practice · Rural and Community Mental Health</div></article><article class="fit-card glass"><h4>Health equity</h4><p>Reproductive and maternal health, HIV prevention, and transgender people&rsquo;s access to trauma-informed care.</p><div class="teach"><span>Can teach</span>Practice with Individuals, Families, and Groups · Policy</div></article><article class="fit-card glass"><h4>Rural, tribal, and global communities</h4><p>Field research and practice across seven Indian states, with professional working ability in eight Indian languages.</p><div class="teach"><span>Can teach</span>Global Social Work · Rural and Community Mental Health</div></article><article class="fit-card glass"><h4>Research methods and program evaluation</h4><p>Systematic reviews, longitudinal and multilevel modeling, qualitative research, and government program evaluation.</p><div class="teach"><span>Can teach</span>Social Work Research and Program Evaluation (taught as instructor of record)</div></article></div>
   </div>
 </section>
 
-<section id="places" class="tight-top pmap">
+<section id="teaching">
   <div class="wrap head rv">
-    <div class="kicker">Where the work has taken me</div>
-    <h2 class="h-l" style="margin-top:10px">Forests, coasts, prisons, <span class="serif">and cities.</span></h2>
-    <p class="sub">From the forests of Melghat to the coast of Nagapattinam, every setting asked the same question in a different language: who gets to ask for help, and who is heard?</p>
+    <div class="kicker">Teaching</div>
+    <h2 class="h-l" style="margin-top:10px">Ask. Act. Lead.</h2>
+    <p class="sub">Most students expect research to be the course farthest from practice. I teach it as the course that helps them see their clients and communities more clearly.</p>
   </div>
-  <div class="wrap grid">
-    <div class="mapcard rv"><svg id="placesmap" viewBox="0 0 420 430" role="img" aria-label="Map of the places in India where Santhoshraj Srinivasan has worked, numbered in order"></svg><div class="map-note">Numbers mark main roles. Small dots mark other districts. Rings mark advisory visits to community organizations.</div></div>
-    <ol class="rv" id="placeslist">
-      <li data-i="1"><span class="n">1</span><div><div class="when">2018</div><h3>Nilgiris–Wayanad region</h3><div class="prole">Psychiatric Social Work Intern, MSW field education</div><p>Home visits and tuberculosis and HIV case-finding with four tribal communities in the hills of the Western Ghats.</p><span class="tag">Tribal and forest communities</span></div></li><li data-i="2"><span class="n">2</span><div><div class="when">December 2018 – January 2019</div><h3>Kolkata, West Bengal</h3><div class="prole">Psychiatric Social Work Intern, MSW block placement</div><p>Worked alongside a professor of psychiatry in the state's urban mental health program, with families of people living with serious mental illness.</p><span class="tag">Urban psychiatric care</span></div></li><li data-i="3"><span class="n">3</span><div><div class="when">July – December 2019</div><h3>Vidarbha region, Maharashtra</h3><div class="prole">Research Assistant, Tata Institute of Social Sciences</div><p>Traveled across the districts of Vidarbha, from Nagpur and Amravati to Chikhaldara deep in the Melghat forest. Supported household and institutional data collection in tribal, rural, and urban areas of 100 villages for district development plans with the Government of Maharashtra and United Nations partners, and met district collectors alongside the project leader.</p><span class="tag">Tribal and forest communities</span></div></li><li data-i="4"><span class="n">4</span><div><div class="when">January – August 2020</div><h3>Rural and coastal villages near Chennai, Tamil Nadu</h3><div class="prole">Project Coordinator, Rural Mental Health Program</div><p>Worked alongside women living with serious mental illness and their families, in their own villages and their own language.</p><span class="tag">Rural and coastal mental health</span></div></li><li data-i="5"><span class="n">5</span><div><div class="when">February – April 2021</div><h3>Tiruchirappalli, Tamil Nadu</h3><div class="prole">Research Associate, Tata Institute of Social Sciences</div><p>Helped build and lead the team that assessed the social and environmental impact of a 2-megawatt solar project at the Indian Institute of Management, Tiruchirappalli.</p><span class="tag">Research and evaluation</span></div></li><li data-i="6"><span class="n">6</span><div><div class="when">July 2021 – January 2022</div><h3>Thiruvananthapuram, Kerala</h3><div class="prole">Correctional Counselor</div><p>Counseled people across seven prisons, listening to stories that rarely leave the prison walls.</p><span class="tag">Prisons</span></div></li><li data-i="7"><span class="n">7</span><div><div class="when">February – December 2022</div><h3>Kochi, Idukki, Chennai, Tiruchirappalli, Pudukkottai, Vellore, and Dharmapuri</h3><div class="prole">Co-Evaluator, later Senior Evaluator, National AIDS Control Organization (NACO)</div><p>Evaluated HIV prevention programs across Kerala and Tamil Nadu, from hill districts to city neighborhoods.</p><span class="tag">Public health</span></div></li><li data-i="8"><span class="n">8</span><div><div class="when">2023</div><h3>Nagapattinam coast, Tamil Nadu</h3><div class="prole">Senior Youth Co-Worker</div><p>Mentored care-experienced young people in a residential care program on the coast, where we built a library together.</p><span class="tag">Care-experienced young people</span></div></li><li class="now" data-i="9"><span class="n">9</span><div><div class="when">2023 – today</div><h3>Knoxville, Tennessee</h3><div class="prole">PhD Student, College of Social Work, University of Tennessee, Knoxville</div><p>Carrying the questions from every one of these places into research on parenting stress and parental burnout, and into the classroom.</p><span class="tag">Research and teaching</span></div></li>
-    <li class="extra" data-i="x"><span class="n">+</span><div><div class="when">Advisory visits, alongside my main roles</div><h3>Bengaluru, Wayanad, Tirupati, Hyderabad, and Mumbai</h3><div class="prole">Karnataka, Kerala, Andhra Pradesh, Telangana, and Maharashtra</div><p>Visited community organizations across these cities to advise their leaders on advocacy and on strengthening how their programs reach people.</p><span class="tag">Advisory support to community organizations</span></div></li></ol>
+  <div class="wrap stack">
+    <div class="scard glass"><div class="big grad">Ask</div><div><h3>Start with a real question</h3><p>Every student builds a research question from their own field placement, whether in a school, a hospital, or a child welfare office.</p></div></div>
+    <div class="scard glass"><div class="big grad">Act</div><div><h3>Answer it with evidence</h3><p>They learn design, sampling, and ethics by applying each one to a problem they care about. Who would a convenience sample leave out at your agency?</p></div></div>
+    <div class="scard glass"><div class="big grad">Lead</div><div><h3>Share it and change things</h3><p>Students take what they learn back to their peers and agencies, and every finding raises a new question.</p></div></div>
   </div>
+  <p class="saying wrap rv">"You chose social work, but social work<br>also chose you to lead."</p>
+  <div class="wrap courses rv">
+        <h3 class="block-title">Courses</h3>
+        <div class="course-grid">
+            <article class="course glass"><div class="course-code">BSW &middot; Required course</div><h4>Foundations of Social Work Research</h4><div class="course-role">Instructor of record &middot; Fall 2025, Fall 2026</div><p>Every student builds a staged research proposal from a question in their own field placement: the Field Question Project. After fall 2025 student feedback, I rebuilt class time around group activities tied to placements and expanded office hours.</p></article>
+            <article class="course glass"><div class="course-code">BSW &middot; Summer section</div><h4>Foundations of Social Work Research</h4><div class="course-role">Guest lecturer &middot; Summer 2026</div><p>Guest lecture for the summer section of the same required research course.</p></article>
+            <article class="course glass"><div class="course-code">BSW Honors</div><h4>Honors: Integrative Seminar</h4><div class="course-role">Graduate teaching assistant &middot; Spring 2026</div><p>Supported honors students as they connected research, practice, and their own professional growth.</p></article>
+            <article class="course glass"><div class="course-code">MSW</div><h4>School Social Work</h4><div class="course-role">Graduate teaching assistant &middot; Fall 2024</div><p>Gave students detailed feedback on their work, with practical guidance for school-based practice.</p></article>
+        </div>
+        <p class="course-prep">Teaching preparation: Teaching Methods in Social Work and Teaching Practicum, University of Tennessee, Knoxville.</p>
+        
+    </div>
 </section>
 
 <section id="roles">
@@ -905,138 +960,17 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   </div>
 </section>
 
-<!-- KURAL -->
-<section class="kural" id="kural">
+<section id="places" class="tight-top pmap">
   <div class="wrap head rv">
-    <div class="kicker">The verse I carry</div>
-    <h2 class="h-l" style="margin-top:10px">Thirukkural <span class="serif">393</span></h2>
-    <p class="sub">From Valluvar's chapter on Learning (கல்வி), written about two thousand years ago.</p>
+    <div class="kicker">Where the work has taken me</div>
+    <h2 class="h-l" style="margin-top:10px">Forests, coasts, prisons, <span class="serif">and cities.</span></h2>
+    <p class="sub">From the forests of Melghat to the coast of Nagapattinam, every setting asked the same question in a different language: who gets to ask for help, and who is heard?</p>
   </div>
-  <div class="wrap">
-    <div class="fold" id="fold">
-      <div class="leaf left">
-        <p class="tamil">கண்ணுடையர் என்பவர் கற்றோர் முகத்திரண்டு<br>புண்ணுடையர் கல்லா தவர்.</p>
-        <p class="kmeta">திருக்குறள் 393 · அதிகாரம் 40, கல்வி</p>
-      </div>
-      <div class="leaf right">
-        <p class="trans">"Those who have learned are the ones who truly have eyes. The unlearned have only two wounds upon the face."</p>
-        <p class="why">My father cannot see. By Valluvar's measure, he never lacked eyes: he fought for his education, became a teacher, and opened mine. That is why I teach research. I want every student to see the people that systems overlook.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ASK ACT LEAD -->
-<section id="teaching">
-  <div class="wrap head rv">
-    <div class="kicker">Teaching</div>
-    <h2 class="h-l" style="margin-top:10px">Ask. Act. Lead.</h2>
-    <p class="sub">Most students expect research to be the course farthest from practice. I teach it as the course that helps them see their clients and communities more clearly.</p>
-  </div>
-  <div class="wrap stack">
-    <div class="scard glass"><div class="big grad">Ask</div><div><h3>Start with a real question</h3><p>Every student builds a research question from their own field placement, whether in a school, a hospital, or a child welfare office.</p></div></div>
-    <div class="scard glass"><div class="big grad">Act</div><div><h3>Answer it with evidence</h3><p>They learn design, sampling, and ethics by applying each one to a problem they care about. Who would a convenience sample leave out at your agency?</p></div></div>
-    <div class="scard glass"><div class="big grad">Lead</div><div><h3>Share it and change things</h3><p>Students take what they learn back to their peers and agencies, and every finding raises a new question.</p></div></div>
-  </div>
-  <p class="saying wrap rv">"You chose social work, but social work<br>also chose you to lead."</p>
-  <div class="wrap courses rv">
-        <h3 class="block-title">Courses</h3>
-        <div class="course-grid">
-            <article class="course glass"><div class="course-code">BSW &middot; Required course</div><h4>Foundations of Social Work Research</h4><div class="course-role">Instructor of record &middot; Fall 2025, Fall 2026</div><p>Every student builds a staged research proposal from a question in their own field placement: the Field Question Project. After fall 2025 student feedback, I rebuilt class time around group activities tied to placements and expanded office hours.</p></article>
-            <article class="course glass"><div class="course-code">BSW &middot; Summer section</div><h4>Foundations of Social Work Research</h4><div class="course-role">Guest lecturer &middot; Summer 2026</div><p>Guest lecture for the summer section of the same required research course.</p></article>
-            <article class="course glass"><div class="course-code">BSW Honors</div><h4>Honors: Integrative Seminar</h4><div class="course-role">Graduate teaching assistant &middot; Spring 2026</div><p>Supported honors students as they connected research, practice, and their own professional growth.</p></article>
-            <article class="course glass"><div class="course-code">MSW</div><h4>School Social Work</h4><div class="course-role">Graduate teaching assistant &middot; Fall 2024</div><p>Gave students detailed feedback on their work, with practical guidance for school-based practice.</p></article>
-        </div>
-        <p class="course-prep">Teaching preparation: Teaching Methods in Social Work and Teaching Practicum, University of Tennessee, Knoxville.</p>
-        
-    </div>
-</section>
-
-<section id="words" class="tight-top">
-  <div class="wrap head rv">
-    <div class="kicker">In others' words</div>
-    <h2 class="h-l">What colleagues <span class="serif">see.</span></h2>
-    <p class="sub">Words from faculty, supervisors, and partners will appear here soon. For now, these are the skills they describe most.</p>
-  </div>
-  <div class="wrap strengths rv">
-    <span>Individual and group counseling</span><span>Crisis and suicide-risk response</span><span>Psychoeducation and staff training</span><span>Community organizing</span><span>Case management</span><span>Program evaluation</span><span>Quantitative and qualitative research</span><span>Practice in 8 Indian languages</span>
-  </div>
-</section>
-
-<!-- RESEARCH -->
-<section id="research" class="tight-top">
-  <div class="wrap head rv">
-      <div class="kicker">Research program</div>
-      <h2 class="h-l">When caring <span class="serif">wears parents down.</span></h2>
-  </div>
-  <div class="wrap">
-      <p class="lede rv">Raising a child is demanding. When that stress lasts for months and years, some parents reach <em>burnout</em>: exhausted, distant from their children, and no longer the parent they want to be. My dissertation asks how that happens, and what could help.</p>
-      <div class="model glass rv" aria-label="Research model">
-          <div class="model-path">
-              <span class="node">Parenting demands</span><span class="arrow" aria-hidden="true"></span>
-              <span class="node">Parenting stress</span><span class="arrow" aria-hidden="true"></span>
-              <span class="node hot">Parental burnout</span>
-          </div>
-          <p class="model-note">Guided by the Balance Between Risks and Resources theory of parental burnout (Mikolajczak &amp; Roskam, 2018): burnout grows when a parent's demands outweigh their resources for too long.</p>
-      </div>
-      <div class="lab glass rv">
-          <div class="lab-tabs" role="tablist" aria-label="Dissertation papers">
-              <button role="tab" id="lab-t1" aria-controls="lab-p1" aria-selected="true">1 &middot; Evidence</button>
-              <button role="tab" id="lab-t2" aria-controls="lab-p2" aria-selected="false" tabindex="-1">2 &middot; Time</button>
-              <button role="tab" id="lab-t3" aria-controls="lab-p3" aria-selected="false" tabindex="-1">3 &middot; Context</button>
-          </div>
-          <div class="lab-panel" role="tabpanel" id="lab-p1" aria-labelledby="lab-t1">
-              <div class="lab-q">Do parenting stress and burnout go together, and which comes first?</div>
-              <dl class="lab-facts"><div><dt>Design</dt><dd>Systematic review (PRISMA 2020)</dd></div><div><dt>Evidence</dt><dd>18 reports, 17 independent samples</dd></div><div><dt>Status</dt><dd><span class="status done">Completed</span></dd></div></dl>
-              <p>Stress and burnout consistently occur together. Only a few studies test which comes first, and none follows stress that lasts for years.</p>
-          </div>
-          <div class="lab-panel" role="tabpanel" id="lab-p2" aria-labelledby="lab-t2" hidden>
-              <div class="lab-q">Does parenting stress when a child is 9 shape how parents see themselves, and how close they feel to their child, at 15?</div>
-              <dl class="lab-facts"><div><dt>Design</dt><dd>Longitudinal structural equation modeling</dd></div><div><dt>Data</dt><dd>Future of Families and Child Wellbeing Study, 3,347 caregivers</dd></div><div><dt>Status</dt><dd><span class="status">In progress</span></dd></div></dl>
-              <p>Following the same U.S. families for six years lets me ask whether earlier stress comes before later strain.</p>
-          </div>
-          <div class="lab-panel" role="tabpanel" id="lab-p3" aria-labelledby="lab-t3" hidden>
-              <div class="lab-q">Does daily caregiving time relate to burnout differently depending on the age of a parent's youngest child?</div>
-              <dl class="lab-facts"><div><dt>Design</dt><dd>Multilevel modeling</dd></div><div><dt>Data</dt><dd>International Investigation of Parental Burnout, 17,409 parents in 42 countries</dd></div><div><dt>Status</dt><dd><span class="status">In progress</span></dd></div></dl>
-              <p>Comparing parents across countries shows which parts of burnout travel across cultures and which depend on context.</p>
-          </div>
-      </div>
-      <div class="pubs glass rv">
-            <h3 class="block-title">Publications</h3>
-            <div class="pub"><span class="status done">In press</span><p>Lucio, R., Schultz, B., Ochocki, S., Stalnecker, D., <b>Srinivasan, S.</b>, Shayman, E., &amp; Alvarez, M. (in press). Implementing data-driven school social work practice: An examination of data use, needs, and integration. <em>Children &amp; Schools</em>.</p></div>
-            <div class="pub"><span class="status">Under review</span><p><b>Srinivasan, S.</b>, &amp; Mathew, A. R. Childhood abuse, pelvic pain between periods, and reproductive healthcare utilization: A cross-sectional study in the United States. <em>Sexual &amp; Reproductive Healthcare</em>.</p></div><div class="pub"><span class="status">Under review</span><p><b>Srinivasan, S.</b>, Lucio, R., &amp; Brand, N. Organizational support for school social workers entering practice: A qualitative cross-case analysis. <em>Child and Adolescent Social Work Journal</em>.</p></div><div class="pub"><span class="status">Under review</span><p><b>Srinivasan, S.</b>, &amp; Mathew, A. R. Parenting under sustained stress: A conceptual framework for a text-supported intervention with caregivers of adolescents. <em>Child and Adolescent Social Work Journal</em>.</p></div><div class="pub"><span class="status">In progress</span><p>Several additional manuscripts are in revision or in preparation, on parental trauma and burnout, families affected by incarceration, and trauma-informed systems of care.</p></div>
-        </div>
-        <div class="profiles rv"><a class="chip glass" href="https://orcid.org/0009-0005-2855-1132" target="_blank" rel="noopener">ORCID</a><a class="chip glass" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></div>
-  </div>
-</section>
-
-<section id="agenda" class="tight-top">
-  <div class="wrap head rv">
-    <div class="kicker">My research at a glance</div>
-    <h2 class="h-l" style="margin-top:10px">One question, <span class="serif">many settings.</span></h2>
-    <p class="sub">How do stress and trauma move through families and systems, and what helps people recover?</p>
-  </div>
-  <div class="wrap rv">
-    <div class="pillars">
-      <article class="pillar p1"><span class="pn">1</span><h3>Parental stress and burnout</h3><p>How long-term parenting stress becomes burnout, and what that means for children.</p></article>
-      <article class="pillar p2"><span class="pn">2</span><h3>Trauma-informed systems</h3><p>Prisons, reproductive and maternal health, schools, and care settings for young people.</p></article>
-      <article class="pillar p3"><span class="pn">3</span><h3>Health equity for marginalized communities</h3><p>Transgender people, people living with HIV, tribal and rural communities, people with serious mental illness, and communities facing disasters and environmental change.</p></article>
-    </div>
-  </div>
-  <div class="wrap rv">
-    <div class="matrix glass" role="table" aria-label="Research matrix: populations by methods">
-      <div class="mx-legend"><span><i class="done">●</i> Research done</span><span><i class="prac">◐</i> Practice experience</span><span><i class="next">○</i> Ready to study</span></div>
-      <div class="mx-row mx-head"><div class="mx-pop"></div><div class="mx-cell"><span>Practice</span></div><div class="mx-cell"><span>Reviews</span></div><div class="mx-cell"><span>Survey data analysis</span></div><div class="mx-cell"><span>Qualitative</span></div><div class="mx-cell"><span>Program evaluation</span></div><div class="mx-cell"><span>Policy analysis</span></div><div class="mx-cell"><span>Models and frameworks</span></div><div class="mx-cell"><span>Field data collection</span></div></div><div class="mx-row"><div class="mx-pop"><b>Parents and families</b><small>Systematic review, Fragile Families longitudinal study, 42-country burnout data</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell has done" data-label="Reviews" title="Reviews: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has done" data-label="Survey data analysis" title="Survey data analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Policy analysis" title="Policy analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Models and frameworks" title="Models and frameworks: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Incarcerated people and prison systems</b><small>Correctional counseling; prison mental health review; reproductive healthcare policy framework</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell has done" data-label="Reviews" title="Reviews: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has next" data-label="Program evaluation" title="Program evaluation: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Policy analysis" title="Policy analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Women&rsquo;s reproductive and maternal health</b><small>Mother&ndash;child malnutrition analysis; postpartum support framework; prison reproductive healthcare</small></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Reviews" title="Reviews: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Survey data analysis" title="Survey data analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Policy analysis" title="Policy analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has done" data-label="Models and frameworks" title="Models and frameworks: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Transgender people</b><small>Systematic review of trauma-informed care in India</small></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Reviews" title="Reviews: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Policy analysis" title="Policy analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Adolescents and care-experienced young people</b><small>Residential care practice; relational model of parental trauma and adolescent risk; caregiver intervention</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Survey data analysis" title="Survey data analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Models and frameworks" title="Models and frameworks: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>People with serious mental illness and their families</b><small>Rural mental health program; psychiatric social work placements</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has next" data-label="Program evaluation" title="Program evaluation: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>People living with HIV</b><small>HIV prevention program evaluations for NACO</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Program evaluation" title="Program evaluation: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Models and frameworks" title="Models and frameworks: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Tribal and rural communities</b><small>Data collection across 100 villages; tribal field work in Melghat and the Nilgiris&ndash;Wayanad region</small></div><div class="mx-cell has prac" data-label="Practice" title="Practice: Practice experience"><i aria-hidden="true">◐</i><em class="sr">Practice experience</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Field data collection" title="Field data collection: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div></div><div class="mx-row"><div class="mx-pop"><b>Schools and school social workers</b><small>Qualitative study of school social work practice; data-driven practice article</small></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has done" data-label="Survey data analysis" title="Survey data analysis: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell has done" data-label="Qualitative" title="Qualitative: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Policy analysis" title="Policy analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell"></div><div class="mx-cell"></div></div><div class="mx-row"><div class="mx-pop"><b>Communities facing disasters and environmental change</b><small>Social and environmental impact assessment of a solar energy project</small></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell has next" data-label="Survey data analysis" title="Survey data analysis: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has next" data-label="Qualitative" title="Qualitative: Ready to study"><i aria-hidden="true">○</i><em class="sr">Ready to study</em></div><div class="mx-cell has done" data-label="Program evaluation" title="Program evaluation: Research done"><i aria-hidden="true">●</i><em class="sr">Research done</em></div><div class="mx-cell"></div><div class="mx-cell"></div><div class="mx-cell"></div></div>
-    </div>
-  </div>
-
-  <div class="wrap rv">
-    <div class="agenda-sub"><div class="kicker">Where my research goes next</div><h3>Bridging burnout research to the communities I have served</h3></div>
-    <div class="next-grid"><article class="next-card glass"><span class="nn">1</span><h4>Parental burnout among incarcerated parents and their families</h4><p>Builds on: Burnout research, correctional counseling, and two prison reviews</p></article><article class="next-card glass"><span class="nn">2</span><h4>Caregiver burnout in families of people with serious mental illness</h4><p>Builds on: Burnout research and rural mental health practice</p></article><article class="next-card glass"><span class="nn">3</span><h4>Parenting stress among parents living with HIV</h4><p>Builds on: Burnout research and HIV program evaluations</p></article><article class="next-card glass"><span class="nn">4</span><h4>Care-experienced young people as future parents</h4><p>Builds on: Relational model of parental trauma and residential care practice</p></article><article class="next-card glass"><span class="nn">5</span><h4>Family acceptance and well-being of transgender people in India</h4><p>Builds on: Transgender care review and family stress research</p></article><article class="next-card glass ai"><span class="nn">6</span><h4>AI-assisted, trauma-informed text support for overwhelmed caregivers</h4><p>Builds on: postpartum text-support framework, caregiver text intervention, and burnout research</p></article><article class="next-card glass env"><span class="nn">7</span><h4>Family stress and recovery after floods, cyclones, and extreme heat</h4><p>Builds on: burnout research, environmental impact assessment, and coastal community practice</p></article></div>
-  </div>
-  <div class="wrap rv">
-    <div class="agenda-sub"><div class="kicker">How I fit in a school of social work</div><h3>Ready to contribute to research, teaching, and partnerships</h3></div>
-    <div class="fit-grid"><article class="fit-card ai-fit"><div class="ai-badge">Future-facing</div><h4>AI and digital social work</h4><p>Safe, ethical, and trauma-informed use of AI and text-based tools: digital supports that reach caregivers between visits, early warning of rising stress from daily check-ins, and preparing students to use AI with clients&rsquo; dignity and privacy at the center.</p><div class="teach"><span>Can teach</span>Technology and AI in Social Work Practice &middot; Social Work Ethics &middot; Research Methods with AI tools</div></article><article class="fit-card ai-fit env-fit"><div class="ai-badge">Growing field</div><h4>Environmental and disaster social work</h4><p>How floods, cyclones, and heat strain families already under stress, and what helps them recover. Environmental justice for rural, tribal, and coastal communities, and trauma-informed crisis response.</p><div class="teach"><span>Can teach</span>Disaster and Crisis Response &middot; Environmental Justice &middot; Global Social Work</div></article><article class="fit-card glass"><h4>Child, youth, and family well-being</h4><p>Parenting stress, parental burnout, and adolescent well-being, including families involved with child welfare.</p><div class="teach"><span>Can teach</span>Practice with Children, Adolescents, and Families · Human Behavior in the Social Environment</div></article><article class="fit-card glass"><h4>Youth and the justice system</h4><p>Adolescent risk, parental trauma, and families affected by incarceration, with seven prisons of practice experience.</p><div class="teach"><span>Can teach</span>Correctional and Forensic Social Work · Trauma-Informed Practice</div></article><article class="fit-card glass"><h4>Mental and behavioral health</h4><p>Caregiver mental health, serious mental illness, parental alcohol use, and trauma across the life course.</p><div class="teach"><span>Can teach</span>Mental and Behavioral Health Practice · Rural and Community Mental Health</div></article><article class="fit-card glass"><h4>Health equity</h4><p>Reproductive and maternal health, HIV prevention, and transgender people&rsquo;s access to trauma-informed care.</p><div class="teach"><span>Can teach</span>Practice with Individuals, Families, and Groups · Policy</div></article><article class="fit-card glass"><h4>Rural, tribal, and global communities</h4><p>Field research and practice across seven Indian states, with professional working ability in eight Indian languages.</p><div class="teach"><span>Can teach</span>Global Social Work · Rural and Community Mental Health</div></article><article class="fit-card glass"><h4>Research methods and program evaluation</h4><p>Systematic reviews, longitudinal and multilevel modeling, qualitative research, and government program evaluation.</p><div class="teach"><span>Can teach</span>Social Work Research and Program Evaluation (taught as instructor of record)</div></article></div>
+  <div class="wrap grid">
+    <div class="mapcard rv"><svg id="placesmap" viewBox="0 0 420 430" role="img" aria-label="Map of the places in India where Santhoshraj Srinivasan has worked, numbered in order"></svg><div class="map-note">Numbers mark main roles. Small dots mark other districts. Rings mark advisory visits to community organizations.</div></div>
+    <ol class="rv" id="placeslist">
+      <li data-i="1"><span class="n">1</span><div><div class="when">2018</div><h3>Nilgiris–Wayanad region</h3><div class="prole">Psychiatric Social Work Intern, MSW field education</div><p>Home visits and tuberculosis and HIV case-finding with four tribal communities in the hills of the Western Ghats.</p><span class="tag">Tribal and forest communities</span></div></li><li data-i="2"><span class="n">2</span><div><div class="when">December 2018 – January 2019</div><h3>Kolkata, West Bengal</h3><div class="prole">Psychiatric Social Work Intern, MSW block placement</div><p>Worked alongside a professor of psychiatry in the state's urban mental health program, with families of people living with serious mental illness.</p><span class="tag">Urban psychiatric care</span></div></li><li data-i="3"><span class="n">3</span><div><div class="when">July – December 2019</div><h3>Vidarbha region, Maharashtra</h3><div class="prole">Research Assistant, Tata Institute of Social Sciences</div><p>Traveled across the districts of Vidarbha, from Nagpur and Amravati to Chikhaldara deep in the Melghat forest. Supported household and institutional data collection in tribal, rural, and urban areas of 100 villages for district development plans with the Government of Maharashtra and United Nations partners, and met district collectors alongside the project leader.</p><span class="tag">Tribal and forest communities</span></div></li><li data-i="4"><span class="n">4</span><div><div class="when">January – August 2020</div><h3>Rural and coastal villages near Chennai, Tamil Nadu</h3><div class="prole">Project Coordinator, Rural Mental Health Program</div><p>Worked alongside women living with serious mental illness and their families, in their own villages and their own language.</p><span class="tag">Rural and coastal mental health</span></div></li><li data-i="5"><span class="n">5</span><div><div class="when">February – April 2021</div><h3>Tiruchirappalli, Tamil Nadu</h3><div class="prole">Research Associate, Tata Institute of Social Sciences</div><p>Helped build and lead the team that assessed the social and environmental impact of a 2-megawatt solar project at the Indian Institute of Management, Tiruchirappalli.</p><span class="tag">Research and evaluation</span></div></li><li data-i="6"><span class="n">6</span><div><div class="when">July 2021 – January 2022</div><h3>Thiruvananthapuram, Kerala</h3><div class="prole">Correctional Counselor</div><p>Counseled people across seven prisons, listening to stories that rarely leave the prison walls.</p><span class="tag">Prisons</span></div></li><li data-i="7"><span class="n">7</span><div><div class="when">February – December 2022</div><h3>Kochi, Idukki, Chennai, Tiruchirappalli, Pudukkottai, Vellore, and Dharmapuri</h3><div class="prole">Co-Evaluator, later Senior Evaluator, National AIDS Control Organization (NACO)</div><p>Evaluated HIV prevention programs across Kerala and Tamil Nadu, from hill districts to city neighborhoods.</p><span class="tag">Public health</span></div></li><li data-i="8"><span class="n">8</span><div><div class="when">2023</div><h3>Nagapattinam coast, Tamil Nadu</h3><div class="prole">Senior Youth Co-Worker</div><p>Mentored care-experienced young people in a residential care program on the coast, where we built a library together.</p><span class="tag">Care-experienced young people</span></div></li><li class="now" data-i="9"><span class="n">9</span><div><div class="when">2023 – today</div><h3>Knoxville, Tennessee</h3><div class="prole">PhD Student, College of Social Work, University of Tennessee, Knoxville</div><p>Carrying the questions from every one of these places into research on parenting stress and parental burnout, and into the classroom.</p><span class="tag">Research and teaching</span></div></li>
+    <li class="extra" data-i="x"><span class="n">+</span><div><div class="when">Advisory visits, alongside my main roles</div><h3>Bengaluru, Wayanad, Tirupati, Hyderabad, and Mumbai</h3><div class="prole">Karnataka, Kerala, Andhra Pradesh, Telangana, and Maharashtra</div><p>Visited community organizations across these cities to advise their leaders on advocacy and on strengthening how their programs reach people.</p><span class="tag">Advisory support to community organizations</span></div></li></ol>
   </div>
 </section>
 
@@ -1065,6 +999,17 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
     <div class="flow-ctrl"><button class="glass" aria-label="Previous" data-flow="galleryflow" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button><div class="dots" id="galleryflow-dots"></div><button class="glass" aria-label="Next" data-flow="galleryflow" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button></div>
 </section>
 
+<section id="words" class="tight-top">
+  <div class="wrap head rv">
+    <div class="kicker">Core strengths</div>
+    <h2 class="h-l">What I bring <span class="serif">to the team.</span></h2>
+    <p class="sub">Skills built across practice, research, and teaching.</p>
+  </div>
+  <div class="wrap strengths rv">
+    <span>Individual and group counseling</span><span>Crisis and suicide-risk response</span><span>Psychoeducation and staff training</span><span>Community organizing</span><span>Case management</span><span>Program evaluation</span><span>Quantitative and qualitative research</span><span>Practice in 8 Indian languages</span>
+  </div>
+</section>
+
 <section id="work" class="tight-top">
   <div class="wrap head rv">
       <div class="kicker">Work with me</div>
@@ -1078,19 +1023,46 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   <p style="text-align:center;margin-top:26px"><a class="btn glass" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">Invite me on LinkedIn</a></p>
 </section>
 
-
-<!-- STORIES -->
-<section id="stories" style="padding-bottom:60px">
+<section id="story">
   <div class="wrap head rv">
-    <div class="kicker">Weekly stories</div>
-    <h2 class="h-l" style="margin-top:10px">One story, <span class="serif">every week.</span></h2>
-    <p class="sub">Field memories, classroom moments, research in plain words, and the people who shaped me.</p>
+    <div class="kicker">My story</div>
+    <h2 class="h-l" style="margin-top:10px">Five chapters. <span class="serif">One question.</span></h2>
+    <p class="sub">Swipe through the places that made me. Wherever I worked, I learned the local language before I tried to help.</p>
   </div>
-  <div class="wrap-narrow rv"><div class="soon glass"><h3>The first story is on its way.</h3><p>Until then, you can hear me tell some of these stories on the podcast.</p><p class="spotify-cta" style="margin-top:14px"><a class="btn glass" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener">Listen on Spotify</a></p></div></div>
+  <div class="flow" id="journey">
+    <article class="chapter c1"><span class="num">1</span><div class="yr">Childhood · Tamil Nadu</div><div><h3>My father's classroom</h3><p>English and higher education were out of reach for most families in my village. My father is blind, and he fought for his own education until he became a teacher. He taught me that education is something we reach for and hold on to.</p></div></article>
+    <article class="chapter c2"><span class="num">2</span><div class="yr">2017–2019 · MSW field work</div><div><h3>Learning social work in the field</h3><p>From a sanitation program in remote villages to psychiatric hospitals, to Adivasi communities affected by tuberculosis and HIV in the Nilgiris, and to families of people with serious mental illness in Kolkata.</p></div></article>
+    <article class="chapter c3"><span class="num">3</span><div class="yr">2019–2021 · Research and recovery</div><div><h3>Counting the families others miss</h3><p>As a field researcher, I helped gather data across 100 villages and reached households missing from official lists. As a rural mental health program coordinator, I worked alongside women living with serious mental illness and their families, in their own language.</p></div></article>
+    <article class="chapter c4"><span class="num">4</span><div class="yr">2021–2023 · Kerala and Tamil Nadu</div><div><h3>Prisons, HIV programs, and young people in care</h3><p>I counseled people in seven prisons, led evaluations of HIV prevention programs for the National AIDS Control Organization, and mentored adolescents in a residential care program, where we built a library together.</p></div></article>
+    <article class="chapter c5"><span class="num">5</span><div class="yr">2023–today · Knoxville, Tennessee</div><div><h3>Research and teaching</h3><p>As a PhD student at the University of Tennessee, I study parenting stress and parental burnout, and I teach Foundations of Social Work Research as instructor of record.</p></div></article>
+  </div>
+  <div class="flow-ctrl">
+    <button class="glass" aria-label="Previous" data-flow="journey" data-dir="-1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg></button>
+    <div class="dots" id="journey-dots"></div>
+    <button class="glass" aria-label="Next" data-flow="journey" data-dir="1"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 18 6-6-6-6"/></svg></button>
+  </div>
 </section>
 
+<section class="kural" id="kural">
+  <div class="wrap head rv">
+    <div class="kicker">The verse I carry</div>
+    <h2 class="h-l" style="margin-top:10px">Thirukkural <span class="serif">393</span></h2>
+    <p class="sub">From Valluvar's chapter on Learning (கல்வி), written about two thousand years ago.</p>
+  </div>
+  <div class="wrap">
+    <div class="fold" id="fold">
+      <div class="leaf left">
+        <p class="tamil">கண்ணுடையர் என்பவர் கற்றோர் முகத்திரண்டு<br>புண்ணுடையர் கல்லா தவர்.</p>
+        <p class="kmeta">திருக்குறள் 393 · அதிகாரம் 40, கல்வி</p>
+      </div>
+      <div class="leaf right">
+        <p class="trans">"Those who have learned are the ones who truly have eyes. The unlearned have only two wounds upon the face."</p>
+        <p class="why">My father cannot see. By Valluvar's measure, he never lacked eyes: he fought for his education, became a teacher, and opened mine. That is why I teach research. I want every student to see the people that systems overlook.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- PODCAST -->
 <section id="listen" style="padding-bottom:60px">
   <div class="wrap head rv">
     <div class="kicker">Podcast</div>
@@ -1101,7 +1073,26 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   <p class="spotify-cta"><a class="btn glass" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 14v-2a9 9 0 0 1 18 0v2"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></svg>Listen on Spotify</a></p>
 </section>
 
-<!-- LIFE CODE -->
+<section id="stories" style="padding-bottom:60px">
+  <div class="wrap head rv">
+    <div class="kicker">Weekly stories</div>
+    <h2 class="h-l" style="margin-top:10px">One story, <span class="serif">every week.</span></h2>
+    <p class="sub">Field memories, classroom moments, research in plain words, and the people who shaped me.</p>
+  </div>
+  <div class="wrap-narrow rv"><div class="soon glass"><h3>The first story is on its way.</h3><p>Until then, you can hear me tell some of these stories on the podcast.</p><p class="spotify-cta" style="margin-top:14px"><a class="btn glass" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener">Listen on Spotify</a></p></div></div>
+</section>
+
+<section id="today" class="tight-top" style="padding-bottom:30px">
+  <div class="wrap-narrow">
+    <a class="daily-card glass rv" href="#today">
+      <div class="kicker">Today's reflection</div>
+      <h3>Learn the language before you try to help.</h3>
+      <p>A short reflection from my years in the field. New reflections will appear here.</p>
+      <span class="daily-link">Read and reflect &rarr;</span>
+    </a>
+      </div>
+</section>
+
 <section class="motto" id="code">
   <div class="wrap-narrow rv">
     <div class="kicker">The code I live by</div>
@@ -1111,7 +1102,6 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
   </div>
 </section>
 
-<!-- FOLLOW -->
 <section class="news" id="subscribe" style="padding-top:20px">
   <div class="wrap rv">
     <div class="box">
@@ -1164,7 +1154,7 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
 <footer>
   <div class="wrap">
     <span>© 2026 Santhoshraj Srinivasan · The Right to Ask</span>
-    <nav><a href="#story">Story</a><a href="#teaching">Teaching</a><a href="#research">Research</a><a href="#today">Daily</a><a href="#listen">Podcast</a><a href="#contact">Contact</a><a href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></nav>
+    <nav><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#roles">Experience</a><a href="#talks">Presentations</a><a href="#story">Story</a><a href="#listen">Podcast</a><a href="#contact">Contact</a><a href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" rel="noopener">LinkedIn</a></nav>
     <p class="rights">All rights reserved. The writing, audio, photographs, and design of this site may not be copied or reproduced without written permission. To share, please link to the original page.</p>
   </div>
 </footer>
