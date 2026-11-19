@@ -458,6 +458,8 @@ footer .rights{display:block;width:100%;font-size:12.5px;color:var(--muted);marg
 /* ---------- Membership ---------- */
 .lock-badge{display:inline-flex;align-items:center;gap:4px;margin-left:8px;padding:2px 8px;border-radius:999px;font-size:11.5px;font-weight:600;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent);vertical-align:1px}
 .news-cta{margin-top:30px}
+.news-or{margin-top:28px;font-size:14px;font-weight:600;opacity:.8}
+#newsnote.ok{opacity:1;font-weight:600;font-size:15px}
 .news-cta .pill-btn{display:inline-block;padding:15px 26px;font-size:16px}
 .news form{margin-top:18px}
 .news .pill-btn.ghost{background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.4)}
@@ -1018,8 +1020,17 @@ footer nav,.site-footer nav{flex-wrap:wrap;row-gap:10px}
     <div class="box">
       <div style="font-size:14px;font-weight:600;opacity:.85">Follow along</div>
       <h2 class="h-l" style="margin-top:12px">Stories, reflections,<br><span class="serif">and a podcast.</span></h2>
-      <p class="sub">Follow the podcast on Spotify for new episodes, and connect with me on LinkedIn. Weekly stories begin soon.</p>
-      <p class="news-cta"><a class="pill-btn" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener">Follow on Spotify</a> <a class="pill-btn ghost" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
+      <p class="sub">Get new stories and podcast episodes by email. It's free, and you can unsubscribe anytime.</p>
+      <form id="newsform" action="https://buttondown.com/api/emails/embed-subscribe/santhoshraj" method="post" target="bd-frame">
+        <label for="nl-email" class="hp" style="position:absolute;left:-9999px">Email address</label>
+        <input id="nl-email" type="email" name="email" placeholder="Your email address" autocomplete="email" required>
+        <input type="hidden" name="embed" value="1">
+        <button type="submit" class="pill-btn">Subscribe</button>
+      </form>
+      <iframe name="bd-frame" title="Newsletter sign-up" style="display:none"></iframe>
+      <small id="newsnote" role="status" aria-live="polite">One email when a new story or episode is out. No spam.</small>
+      <p class="news-or">Or follow along here:</p>
+      <p class="news-cta" style="margin-top:12px"><a class="pill-btn" href="https://open.spotify.com/show/077Ysa13KWvZZ9t2XHMpvS" target="_blank" rel="noopener">Follow on Spotify</a> <a class="pill-btn ghost" href="https://www.linkedin.com/in/santhoshrajsrinivasanpsw/" target="_blank" rel="noopener">Connect on LinkedIn</a></p>
     </div>
   </div>
 </section>
@@ -1345,6 +1356,18 @@ addEventListener('scroll', () => requestAnimationFrame(onScroll), { passive: tru
       })
       .catch(function(){show('err','Sorry, the message could not be sent. Please check your connection and try again.')})
       .then(function(){btn.disabled=false;btn.textContent='Send message'});
+  });
+})();
+
+/* ---------- Newsletter ---------- */
+(function(){
+  var f=document.getElementById('newsform'); if(!f) return;
+  var n=document.getElementById('newsnote'), b=f.querySelector('button');
+  f.addEventListener('submit',function(e){
+    var v=f.elements['email'].value.trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){e.preventDefault();n.className='';n.textContent='Please enter a valid email address.';return}
+    b.disabled=true;
+    setTimeout(function(){f.reset();b.disabled=false;n.className='ok';n.textContent='Almost done. Check your inbox and click the confirmation link to finish subscribing.'},900);
   });
 })();
 </script>
