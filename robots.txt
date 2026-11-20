@@ -6,7 +6,7 @@ Disallow: /*.jpg$
 Disallow: /*.jpeg$
 Disallow: /*.png$
 Disallow: /*.webp$
-Disallow: /images/
+Disallow: /media/
 
 User-agent: LinkedInBot
 User-agent: facebookexternalhit
@@ -21,6 +21,6 @@ Disallow: /*.jpg$
 Disallow: /*.jpeg$
 Disallow: /*.png$
 Disallow: /*.webp$
-Disallow: /images/
+Disallow: /media/
 
 Sitemap: https://santhoshrajsrinivasan.com/sitemap.xml
