@@ -8,6 +8,13 @@ Disallow: /*.png$
 Disallow: /*.webp$
 Disallow: /images/
 
+User-agent: LinkedInBot
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: Slackbot
+User-agent: WhatsApp
+Allow: /
+
 User-agent: *
 Allow: /
 Disallow: /*.jpg$
